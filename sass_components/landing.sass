@@ -1,0 +1,77 @@
+$font-stack: 'Nunito', sans-serif
+$font-size-global: 1.2rem
+$color-font: #fff
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap')
+
+body
+    font-family: $font-stack
+    font-size: $font-size-global
+
+header
+    height: 100vh
+    width: 100%
+    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/header.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-attachment: fixed
+    background-position: center
+    padding-top: 0.1px
+
+    .head
+        padding: 4rem 6rem
+        display: flex
+        justify-content: space-around
+        align-items: flex-start
+        flex-direction: column
+        color: $color-font
+
+    h1
+        font-size: 4.5rem
+        margin-bottom: 15px
+        font-weight: 700
+        padding-bottom: 1.5rem
+    
+    .contenedor
+        .copy
+            font-weight: 600
+            font-size: 1.5rem
+            list-style-type: circle
+            padding-bottom: 1.5rem
+
+        .btn-header
+            margin-right: 2rem
+            font-size: 1.8rem
+        
+        .btn-primary
+            background-color: #325d7f
+            border-color:#325d7f
+            padding-left: 3.2rem
+            padding-right: 3.2rem
+            border-radius: 1.5rem
+        
+        .btn-lg
+            border-color: $color-font
+            border-radius: 1.5rem
+            padding: 0 1.5rem
+
+nav
+    background-color: rgba(255, 255, 255, 0.9) !important
+    height: 5rem
+    width: 100%
+    padding: 2.5rem 6rem
+    z-index: 1 !important
+    position: sticky
+    box-shadow: 0 0 3px #000
+
+    img
+        z-index: 2 !important
+
+    li
+        a
+            font-size: 2rem
+            font-weight: 700
+            margin-left: 3rem
+
+main
+    
