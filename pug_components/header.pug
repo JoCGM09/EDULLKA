@@ -21,3 +21,12 @@ header
                         ) Inicio
                     li.nav-item
                         a.nav-link(href="#main") Campamentos
+    div.contenedor.head
+        .row
+            .col-md-7
+                h1.titulo #{titulo}
+                ul.copy
+                    each subtitulo in subtitulos
+                        li=subtitulo
+                +botonFrontal('Inscríbete')
+                +botonFrontal('Metodología')
