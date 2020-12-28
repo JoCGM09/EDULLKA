@@ -1,0 +1,66 @@
+-var titulo = "Campamento virtual, ¿Listos?"
+-var subtitulos = ["Clases en vivo por 10 días", "Aprendizaje colaborativo", "Metodologías diferentes", "Dinámicas continuas"]
+-var fechaInicio = ["Sin programación actualmente", "12 de enero del 2020", "23 de febrero del 2020"]
+-var numeros = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+-var link = { python:'https://forms.gle/4bdZokf4Ai9NPSHE7', java: 'https://www.google.com' }
+
+mixin botonFrontal(texto)
+    if texto == 'Inscríbete'
+        button.btn.btn-primary.btn-lg.btn-header(
+            type="button"
+        ) #{texto}
+    else
+        button.btn.btn-lg.btn-header(
+            type="button"
+        ) #{texto}
+mixin modulo(num)
+    li
+        p 
+            button.btn.btn-success(
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"+num
+                aria-expanded="false"
+                aria-controls="collapse"+num
+                ) Día #{num}
+        .collapse(id='CollapseExample'+num)
+            .card.card-body Secciones y temas.
+mixin CampamentoActivo(tema, inicio)
+    .col 
+        .card.h-100
+            img.card-img-top(
+                src=`images/${tema}.jpg`
+                alt="..."
+                )
+            .card-body
+                a.btn.btn-success.btn-lg(
+                    type="button"
+                    href= link[`${tema}`]
+                    target="_blank"
+                ) Inscríbete
+                a.btn.btn-secondary.btn-lg(
+                    type="button"
+                    href="#" 
+                ) Información
+            .card-footer
+                small.text-muted #{fechaInicio[`${inicio}`]}
+mixin CampamentoInactivo(tema)
+    .col 
+        .card.h-100
+            img.card-img-top(
+                src=`images/${tema}.jpg`
+                alt="..."
+                )
+            .card-body
+                a.btn.btn-success.btn-lg.disabled(
+                    role="button"
+                    href="#"
+                    area-disabled="true"
+                ) Inscríbete
+                a.btn.btn-secondary.btn-lg.disabled(
+                    role="button"
+                    href="#"
+                    area-disabled="true"
+                ) Información
+            .card-footer
+                small.text-muted #{fechaInicio[0]}

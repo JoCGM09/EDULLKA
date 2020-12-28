@@ -1,0 +1,22 @@
+extend pug_components/template.pug
+block contenidos
+        main
+            include pug_components/front.pug
+            block frontal
+            .container 
+                .row.row-cols-1.row-cols-md-3.g-4
+                    +CampamentoActivo('python', 1)
+                    +CampamentoInactivo('python')
+                    +CampamentoInactivo('python')
+                    +CampamentoInactivo('python')
+            include pug_components/modules.pug
+            block modulos
+            .col-md-6
+                .container
+                    img.rounded.mx-auto.d-block(
+                        src="images/generico.jpg"
+                        alt="..."
+                    )
+                ul.copy
+                    each subtitulo in subtitulos
+                        li=subtitulo 

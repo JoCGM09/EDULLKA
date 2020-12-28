@@ -1,0 +1,23 @@
+header
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        .container-fluid
+            a.navbar-brand(href="landing.html")
+                img.logo(src="images/logo-edullka.png", alt="Logo principal" width="200" height="50")    
+            button.navbar-toggler(
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            )
+                span.navbar-toggler-icon
+            .collapse.navbar-collapse(id="navbarNav")
+                ul.navbar-nav.ms-auto
+                    li.nav-item
+                        a.nav-link(
+                            href="landing.html"
+                            aria-current="page"
+                        ) Inicio
+                    li.nav-item
+                        a.nav-link(href="#main") Campamentos

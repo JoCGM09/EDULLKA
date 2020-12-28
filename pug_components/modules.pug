@@ -1,0 +1,10 @@
+span.badge.rounded-pill.bg-primary Metodología
+.row
+    .col-md-5
+        .container.mt-1.mb-2
+            .row   
+                .col-md-6.offset-md-2
+                    ul.timeline
+                        each numero in numeros
+                            +modulo(numero)
+block modulos 
