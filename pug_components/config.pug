@@ -21,9 +21,9 @@ mixin modulo(num)
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseExample"+num
                 aria-expanded="false"
-                aria-controls="collapse"+num
+                aria-controls="collapseExample"+num
                 ) Día #{num}
-        .collapse(id='CollapseExample'+num)
+        .collapse(id='collapseExample'+num)
             .card.card-body Secciones y temas.
 mixin CampamentoActivo(tema, inicio)
     .col 
