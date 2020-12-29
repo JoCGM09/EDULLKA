@@ -26,6 +26,9 @@ header
         flex-direction: column
         color: $color-font
 
+        .col-md-7
+            text-align: left
+
     h1
         font-size: 4.5rem
         margin-bottom: 15px
@@ -50,10 +53,22 @@ header
             padding-right: 3.2rem
             border-radius: 1.5rem
         
-        .btn-lg
+        .btn-outline-light
             border-color: $color-font
             border-radius: 1.5rem
-            padding: 0 1.5rem
+            padding-left: 1.5rem
+            padding-right: 1.5rem
+        
+        .btn-primary:hover
+            background-color: #1e415c
+            border-color: #1e415c
+            transition: .4s ease
+        
+        .btn-outline-light:hover
+            background-color: #f7707f
+            border-color: #f7707f
+            color: #fff
+            transition: .4s ease
 
 nav
     background-color: rgba(255, 255, 255, 0.9) !important
@@ -74,4 +89,83 @@ nav
             margin-left: 3rem
 
 main
+    padding: 3rem
+    padding-top: 0
+    
+    span.badge
+        margin-bottom: 1.5rem
+        margin-left: 4rem
+        margin-top: 2rem
+        padding: 1rem 2rem
+        font-size: 2rem
+        font-weight: 600
+        background-color: #325d7f !important
+        border-radius: 1.5rem !important
+        
+    a.btn
+        width: 100%
+        border-radius: 2rem
+        margin-bottom: 1rem
+
+    .row
+        .col-md-5
+            align-content: flex-start
+
+        .col-md-6
+            .container
+                width: 100%
+                background-color: #4d4c4c
+                height: 20rem
+
+                img
+                    height: 20rem
+                    padding: 1rem
+            
+            ul.copy
+                margin-top: 2rem
+                list-style-type: circle
+                font-weight: 500
+                font-size: 1.2rem
+
+
+    ul.timeline
+            list-style-type: none
+            position: relative
+            
+            p
+                margin-bottom: 0.6rem
+
+                button
+                    width: 7rem
+            
+            .collapse
+                width: 15rem !important
+
+    ul.timeline:before
+            content: ' '
+            background: #444444
+            display: inline-block
+            position: absolute
+            left: 29px
+            width: 2px
+            height: 100%
+            z-index: 400
+    ul.timeline > li
+            margin: 0.6rem 0
+            padding-left: 3rem
+    ul.timeline > li:before
+            content: ' '
+            background: #F7707F
+            display: inline-block
+            position: absolute
+            border-radius: 50%
+            border: 3px solid #F7707F
+            left: 20px
+            width: 20px
+            height: 20px
+            z-index: 400
+
+footer
+    .text-center
+        background-color: rgba(0, 0, 0, 0.2)
     

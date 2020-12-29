@@ -7,4 +7,13 @@ span.badge.rounded-pill.bg-primary Metodología
                     ul.timeline
                         each numero in numeros
                             +modulo(numero)
-block modulos 
+    .col-md-6
+                .container
+                    img.rounded.mx-auto.d-block(
+                        src="images/generico.jpg"
+                        alt="..."
+                    )
+                ul.copy
+                    each subtitulo in subtitulos
+                        li=subtitulo 
+block modulos
