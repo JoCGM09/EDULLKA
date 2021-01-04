@@ -1,0 +1,31 @@
+$font-stack: 'Nunito', sans-serif;
+$font-size-global: 1.2rem;
+$color-font: #fff;
+$color-primary: #fff;
+$color-secondary: #325d7f;
+$color-secondary--hover:#1e415c;
+$color-border: #fff;
+$color-impact: #f7707f;
+$bg-color--primary: rgba(255, 255, 255, 0.9);
+$bg-color--secondary: rgba(0, 0, 0, 0.2);
+$bg-color--middle: #4d4c4c;
+$color-shadow:#000;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+@mixin frontal-bg-config {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@function get-opacity($color, $nivel){
+    @return rgba($color, $nivel);
+}
+
+body {
+    font-family: $font-stack;
+    font-size: $font-size-global;
+}
