@@ -1,0 +1,23 @@
+nav{
+    background-color: $bg-color--primary !important;
+    height: 5rem;
+    width: 100%;
+    padding: 2.5rem 6rem;
+    z-index: 1 !important;
+    position: sticky;
+    box-shadow: 0 0 3px $color-shadow;
+
+    img{
+        z-index: 2 !important;
+        margin: 0 auto;
+        width: 170px;
+        height:70px;
+    }
+    li{
+        a{
+            font-size: 2rem;
+            font-weight: 700;
+            margin-left: 3rem;
+        }
+    }        
+}

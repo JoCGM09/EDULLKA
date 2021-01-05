@@ -1,0 +1,84 @@
+main{
+    padding: 3rem;
+    padding-top: 0;
+    
+    span.badge{
+        margin-bottom: 1.5rem;
+        margin-left: 4rem;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        font-weight: 600;
+        background-color: $color-secondary !important;
+        border-radius: 1.5rem !important;
+    }    
+    a.btn{
+        width: 100%;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+    .row{
+        .col-md-5{
+            align-content: flex-start;
+        }
+        .col-md-6{
+            .container{
+                width: 100%;
+                background-color: $bg-color--middle;
+                height: 20rem;
+
+                img{
+                    height: 20rem;
+                    padding: 1rem;
+                }    
+            }
+            ul.copy{
+                margin-top: 2rem;
+                list-style-type: circle;
+                font-weight: 500;
+                font-size: 1.2rem;
+            }    
+        }        
+    }
+    ul.timeline{
+            list-style-type: none;
+            position: relative;
+            
+            p{
+                margin-bottom: 0.6rem;
+
+                button{
+                    width: 7rem;
+                }
+            }
+            .collapse{
+                width: 15rem !important;
+            }    
+    }
+    ul.timeline:before{
+        content: ' ';
+        background: $bg-color--secondary;
+        display: inline-block;
+        position: absolute;
+        left: 29px;
+        width: 2px;
+        height: 100%;
+        z-index: 400;
+    }        
+    ul.timeline > li{
+            margin: 0.6rem 0;
+            padding-left: 3rem;
+    }
+    ul.timeline > li:before{
+        content: ' ';
+        background: $color-impact;
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid $color-impact;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        z-index: 400;
+    }        
+}

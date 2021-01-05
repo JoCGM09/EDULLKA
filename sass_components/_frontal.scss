@@ -1,0 +1,65 @@
+header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(120deg, get-opacity($color-shadow, .4) 0%, get-opacity($color-shadow, .4) 100%),url(../images/header.jpg);
+    @include frontal-bg-config;
+    padding-top: 0.1px;
+
+    .head{
+        margin: 0 auto;
+        padding:  4rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: $color-font;
+
+        .col-md-7{
+            text-align: left;
+        }    
+    }
+    h1{
+        font-size: 4.5rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+        padding-bottom: 1.5rem;
+    }
+    .contenedor{
+        .copy{
+            font-weight: 600;
+            font-size: 1.5rem;
+            list-style-type: circle;
+            padding-bottom: 1.5rem;
+        }
+        .btn-header{
+            margin-right: 2rem;
+            font-size: 1.8rem;
+        }
+        .btn-primary{
+            background-color: $color-secondary;
+            border-color:$color-secondary;
+            padding-left: 3.2rem;
+            padding-right: 3.2rem;
+            border-radius: 1.5rem;
+        }
+        .btn-outline-light{
+            border-color: $color-border;
+            border-radius: 1.5rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .btn-primary:hover{
+            background-color: $color-secondary--hover;
+            border-color: $color-secondary--hover;
+            transition: .4s ease;
+        }
+        .btn-outline-light:hover{
+            background-color: $color-impact;
+            border-color: $color-impact;
+            color: $color-border;
+            transition: .4s ease;
+        }    
+    }        
+}
