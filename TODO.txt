@@ -4,7 +4,7 @@
 2. git add .
 3. git commit -am ""
 4. git pull upstream master
-5. git pull origin ramajose
+5. git push origin ramajose
 6. En github hacer pull request
 7. Listo
 
