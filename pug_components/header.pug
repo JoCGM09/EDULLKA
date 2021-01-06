@@ -1,8 +1,6 @@
 header
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light
-        .container-fluid
-            a.navbar-brand(href="landing.html")
-                img.logo(src="images/logo-edullka.png", alt="Logo principal")    
+    nav.navbar.navbar-expand-lg.navbar-light
+        .container-fluid    
             button.navbar-toggler(
                 type="button"
                 data-bs-toggle="collapse"
@@ -13,7 +11,7 @@ header
             )
                 span.navbar-toggler-icon
             .collapse.navbar-collapse(id="navbarNav")
-                ul.navbar-nav.ms-auto
+                ul.navbar-nav
                     li.nav-item
                         a.nav-link(
                             href="landing.html"
@@ -21,12 +19,15 @@ header
                         ) Inicio
                     li.nav-item
                         a.nav-link(href="#main") Campamentos
+                    li.nav-item
+                        a.nav-link(href="#nosotros") Nosotros
     div.contenedor.head
         .row
-            .col-md-7
+            //.col-md-7
                 h1.titulo #{titulo}
                 ul.copy
                     each subtitulo in subtitulos
                         li=subtitulo
                 +botonFrontal('Inscríbete')
-                +botonFrontal('Metodología')
+            a(href="#")
+                i.fab.fa-whatsapp

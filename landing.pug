@@ -1,24 +1,20 @@
 extend pug_components/template.pug
+block css
+    link(rel="stylesheet", href="css_components/landing.css")
 block contenidos
         main#main 
             include pug_components/front.pug
             block frontal
             .container 
                 .row.row-cols-1.row-cols-md-3.g-4
-                    +CampamentoActivo('python', 1)
-                    +CampamentoActivo('python', 1)
-                    +CampamentoActivo('python', 1)
-                    +CampamentoActivo('python', 1)
-                    +CampamentoActivo('python', 1)
+                    +CampamentoActivo(0, 1)
+                    +CampamentoActivo(1, 1)
+                    +CampamentoActivo(2, 1)
             include pug_components/front2.pug
             block frontal2
             .container
                 .row.row-cols-1.row-cols-md-3.g-4
-                    +CampamentoInactivo('python')
-                    +CampamentoInactivo('python')
-                    +CampamentoInactivo('python')
-                    +CampamentoInactivo('python')
-                    +CampamentoInactivo('python')
-                    +CampamentoInactivo('python')
-            include pug_components/modules.pug
-            block modulos
+                    +CampamentoInactivo('c')
+                    +CampamentoInactivo('c')
+                    +CampamentoInactivo('c')
+            include pug_components/about.pug

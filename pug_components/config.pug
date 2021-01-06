@@ -2,7 +2,8 @@
 -var subtitulos = ["Clases en vivo por 10 días", "Aprendizaje colaborativo", "Metodologías diferentes", "Dinámicas continuas"]
 -var fechaInicio = ["Sin programación actualmente", "12 de enero del 2021 - 22 de enero del 2021", "23 de febrero del 2020"]
 -var numeros = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
--var link = { python:'https://forms.gle/4bdZokf4Ai9NPSHE7', java: 'https://www.google.com'}
+-var link = ['https://forms.gle/4bdZokf4Ai9NPSHE7', 'https://www.google.com']
+-var escudos = ['python','java','c']
 
 mixin botonFrontal(texto)
     if texto == 'Inscríbete'
@@ -26,28 +27,30 @@ mixin modulo(num)
         .collapse(id='collapseExample'+num)
             .card.card-body Secciones y temas.
 mixin CampamentoActivo(tema, inicio)
+    -var titulo = escudos[tema] 
     .col 
         .card.h-100
             img.card-img-top(
-                src=`images/${tema}.jpg`
+                src=`images/${escudos[tema]}.jpg`
                 alt="..."
                 )
             .card-body
+                h2.nombre-campamento=titulo
                 a.btn.btn-success.btn-lg(
                     type="button"
-                    href= link[`${tema}`]
+                    href=link[tema]
                     target="_blank"
                 ) Inscríbete
                 a.btn.btn-secondary.btn-lg(
                     type="button"
-                    href="#" 
+                    href="info.html" 
                 ) Información
             .card-footer
                 small.text-muted #{fechaInicio[`${inicio}`]}
 mixin CampamentoInactivo(tema)
     .col 
         .card.h-100
-            img.card-img-top(
+            img.card-img-top.desenfoque(
                 src=`images/${tema}.jpg`
                 alt="..."
                 )
