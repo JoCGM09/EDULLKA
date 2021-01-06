@@ -11,13 +11,45 @@ main{
         font-weight: 600;
         background-color: $color-secondary !important;
         border-radius: 1.5rem !important;
-    }    
-    a.btn{
-        width: 100%;
-        border-radius: 2rem;
-        margin-bottom: 1rem;
     }
     .row{
+        .nombre-campamento{
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        a.btn{
+            width: 100%;
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+        }
+        a.btn.btn-success.btn-lg{
+            background-color: $color-inscribete !important;
+            border-color: $color-inscribete;
+        }
+        .col{
+            .card{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                img{
+                    height: 250px;
+                    width: 250px;
+                    padding: 1.5rem;
+                }
+                img.desenfoque{
+                    filter: blur(13px);
+                }
+                .card-body{
+                    width: 100%;
+                }
+                .card-footer{
+                    width: 100%;
+                }
+            }
+        }
         .col-md-5{
             align-content: flex-start;
         }

@@ -2,7 +2,7 @@ header{
     height: 100vh;
     width: 100%;
     position: relative;
-    background-image: linear-gradient(120deg, get-opacity($color-shadow, .4) 0%, get-opacity($color-shadow, .4) 100%),url(../images/header.jpg);
+    background-image: linear-gradient(120deg, get-opacity($color-shadow, .4) 0%, get-opacity($color-shadow, .4) 100%),url(../images/header2.jpg);
     @include frontal-bg-config;
     padding-top: 0.1px;
 
@@ -44,22 +44,22 @@ header{
             padding-right: 3.2rem;
             border-radius: 1.5rem;
         }
-        .btn-outline-light{
+        /*.btn-outline-light{
             border-color: $color-border;
             border-radius: 1.5rem;
             padding-left: 1.5rem;
             padding-right: 1.5rem;
-        }
+        }*/
         .btn-primary:hover{
             background-color: $color-secondary--hover;
             border-color: $color-secondary--hover;
             transition: .4s ease;
         }
-        .btn-outline-light:hover{
+        /*.btn-outline-light:hover{
             background-color: $color-impact;
             border-color: $color-impact;
             color: $color-border;
             transition: .4s ease;
-        }    
+        }*/
     }        
 }

@@ -5,34 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Edullka | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="css_components/landing.css"/>
+    <script src="https://kit.fontawesome.com/dd0a564ea9.js" crossorigin="anonymous"></script>
   </head>
+  <link rel="stylesheet" href="css_components/landing.css"/>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid"><a class="navbar-brand" href="landing.html"><img class="logo" src="images/logo-edullka.png" alt="Logo principal" width="350" height="70"/></a>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">   
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link" href="landing.html" aria-current="page">Inicio</a></li>
               <li class="nav-item"><a class="nav-link" href="#main">Campamentos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
             </ul>
           </div>
         </div>
       </nav>
       <div class="contenedor head">
         <div class="row">
-          <div class="col-md-7">
-            <h1 class="titulo">Campamento virtual, ¿Listos?</h1>
-            <ul class="copy">
-              <li>Clases en vivo por 10 días</li>
-              <li>Aprendizaje colaborativo</li>
-              <li>Metodologías diferentes</li>
-              <li>Dinámicas continuas</li>
-            </ul>
-            <button class="btn btn-primary btn-lg btn-header" type="button">Inscríbete</button>
-            <button class="btn btn-outline-light btn-lg btn-header" type="button">Metodología</button>
-          </div>
+          <!--.col-md-7h1.titulo Campamento virtual, ¿Listos?
+          ul.copy
+              each subtitulo in subtitulos
+                  li=subtitulo
+          +botonFrontal('Inscríbete')
+          --><a href="#"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </header>
@@ -41,31 +38,25 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col"> 
             <div class="card h-100"><img class="card-img-top" src="images/python.jpg" alt="..."/>
-              <div class="card-body"><a class="btn btn-success btn-lg" type="button" href="https://forms.gle/4bdZokf4Ai9NPSHE7" target="_blank">Inscríbete</a><a class="btn btn-secondary btn-lg" type="button" href="#">Información</a></div>
+              <div class="card-body">
+                <h2 class="nombre-campamento">python</h2><a class="btn btn-success btn-lg" type="button" href="https://forms.gle/4bdZokf4Ai9NPSHE7" target="_blank">Inscríbete</a><a class="btn btn-secondary btn-lg" type="button" href="info.html">Información</a>
+              </div>
               <div class="card-footer"><small class="text-muted">12 de enero del 2021 - 22 de enero del 2021</small></div>
             </div>
           </div>
           <div class="col"> 
-            <div class="card h-100"><img class="card-img-top" src="images/python.jpg" alt="..."/>
-              <div class="card-body"><a class="btn btn-success btn-lg" type="button" href="https://forms.gle/4bdZokf4Ai9NPSHE7" target="_blank">Inscríbete</a><a class="btn btn-secondary btn-lg" type="button" href="#">Información</a></div>
+            <div class="card h-100"><img class="card-img-top" src="images/java.jpg" alt="..."/>
+              <div class="card-body">
+                <h2 class="nombre-campamento">java</h2><a class="btn btn-success btn-lg" type="button" href="https://www.google.com" target="_blank">Inscríbete</a><a class="btn btn-secondary btn-lg" type="button" href="info.html">Información</a>
+              </div>
               <div class="card-footer"><small class="text-muted">12 de enero del 2021 - 22 de enero del 2021</small></div>
             </div>
           </div>
           <div class="col"> 
-            <div class="card h-100"><img class="card-img-top" src="images/python.jpg" alt="..."/>
-              <div class="card-body"><a class="btn btn-success btn-lg" type="button" href="https://forms.gle/4bdZokf4Ai9NPSHE7" target="_blank">Inscríbete</a><a class="btn btn-secondary btn-lg" type="button" href="#">Información</a></div>
-              <div class="card-footer"><small class="text-muted">12 de enero del 2021 - 22 de enero del 2021</small></div>
-            </div>
-          </div>
-          <div class="col"> 
-            <div class="card h-100"><img class="card-img-top" src="images/python.jpg" alt="..."/>
-              <div class="card-body"><a class="btn btn-success btn-lg" type="button" href="https://forms.gle/4bdZokf4Ai9NPSHE7" target="_blank">Inscríbete</a><a class="btn btn-secondary btn-lg" type="button" href="#">Información</a></div>
-              <div class="card-footer"><small class="text-muted">12 de enero del 2021 - 22 de enero del 2021</small></div>
-            </div>
-          </div>
-          <div class="col"> 
-            <div class="card h-100"><img class="card-img-top" src="images/python.jpg" alt="..."/>
-              <div class="card-body"><a class="btn btn-success btn-lg" type="button" href="https://forms.gle/4bdZokf4Ai9NPSHE7" target="_blank">Inscríbete</a><a class="btn btn-secondary btn-lg" type="button" href="#">Información</a></div>
+            <div class="card h-100"><img class="card-img-top" src="images/c.jpg" alt="..."/>
+              <div class="card-body">
+                <h2 class="nombre-campamento">c</h2><a class="btn btn-success btn-lg" type="button" target="_blank">Inscríbete</a><a class="btn btn-secondary btn-lg" type="button" href="info.html">Información</a>
+              </div>
               <div class="card-footer"><small class="text-muted">12 de enero del 2021 - 22 de enero del 2021</small></div>
             </div>
           </div>
@@ -74,144 +65,25 @@
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col"> 
-            <div class="card h-100"><img class="card-img-top" src="images/python.jpg" alt="..."/>
+            <div class="card h-100"><img class="card-img-top desenfoque" src="images/c.jpg" alt="..."/>
               <div class="card-body"><a class="btn btn-success btn-lg disabled" role="button" href="#" area-disabled="true">Inscríbete</a><a class="btn btn-secondary btn-lg disabled" role="button" href="#" area-disabled="true">Información</a></div>
               <div class="card-footer"><small class="text-muted">Sin programación actualmente</small></div>
             </div>
           </div>
           <div class="col"> 
-            <div class="card h-100"><img class="card-img-top" src="images/python.jpg" alt="..."/>
+            <div class="card h-100"><img class="card-img-top desenfoque" src="images/c.jpg" alt="..."/>
               <div class="card-body"><a class="btn btn-success btn-lg disabled" role="button" href="#" area-disabled="true">Inscríbete</a><a class="btn btn-secondary btn-lg disabled" role="button" href="#" area-disabled="true">Información</a></div>
               <div class="card-footer"><small class="text-muted">Sin programación actualmente</small></div>
             </div>
           </div>
           <div class="col"> 
-            <div class="card h-100"><img class="card-img-top" src="images/python.jpg" alt="..."/>
-              <div class="card-body"><a class="btn btn-success btn-lg disabled" role="button" href="#" area-disabled="true">Inscríbete</a><a class="btn btn-secondary btn-lg disabled" role="button" href="#" area-disabled="true">Información</a></div>
-              <div class="card-footer"><small class="text-muted">Sin programación actualmente</small></div>
-            </div>
-          </div>
-          <div class="col"> 
-            <div class="card h-100"><img class="card-img-top" src="images/python.jpg" alt="..."/>
-              <div class="card-body"><a class="btn btn-success btn-lg disabled" role="button" href="#" area-disabled="true">Inscríbete</a><a class="btn btn-secondary btn-lg disabled" role="button" href="#" area-disabled="true">Información</a></div>
-              <div class="card-footer"><small class="text-muted">Sin programación actualmente</small></div>
-            </div>
-          </div>
-          <div class="col"> 
-            <div class="card h-100"><img class="card-img-top" src="images/python.jpg" alt="..."/>
-              <div class="card-body"><a class="btn btn-success btn-lg disabled" role="button" href="#" area-disabled="true">Inscríbete</a><a class="btn btn-secondary btn-lg disabled" role="button" href="#" area-disabled="true">Información</a></div>
-              <div class="card-footer"><small class="text-muted">Sin programación actualmente</small></div>
-            </div>
-          </div>
-          <div class="col"> 
-            <div class="card h-100"><img class="card-img-top" src="images/python.jpg" alt="..."/>
+            <div class="card h-100"><img class="card-img-top desenfoque" src="images/c.jpg" alt="..."/>
               <div class="card-body"><a class="btn btn-success btn-lg disabled" role="button" href="#" area-disabled="true">Inscríbete</a><a class="btn btn-secondary btn-lg disabled" role="button" href="#" area-disabled="true">Información</a></div>
               <div class="card-footer"><small class="text-muted">Sin programación actualmente</small></div>
             </div>
           </div>
         </div>
-      </div><span class="badge rounded-pill bg-primary">Metodología</span>
-      <div class="row">
-        <div class="col-md-5">
-          <div class="container mt-1 mb-2">
-            <div class="row">  
-              <div class="col-md-6 offset-md-2">
-                <ul class="timeline">
-                  <li>
-                    <p> 
-                      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">Día 1</button>
-                    </p>
-                    <div class="collapse" id="collapseExample1">
-                      <div class="card card-body">Secciones y temas.</div>
-                    </div>
-                  </li>
-                  <li>
-                    <p> 
-                      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">Día 2</button>
-                    </p>
-                    <div class="collapse" id="collapseExample2">
-                      <div class="card card-body">Secciones y temas.</div>
-                    </div>
-                  </li>
-                  <li>
-                    <p> 
-                      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">Día 3</button>
-                    </p>
-                    <div class="collapse" id="collapseExample3">
-                      <div class="card card-body">Secciones y temas.</div>
-                    </div>
-                  </li>
-                  <li>
-                    <p> 
-                      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">Día 4</button>
-                    </p>
-                    <div class="collapse" id="collapseExample4">
-                      <div class="card card-body">Secciones y temas.</div>
-                    </div>
-                  </li>
-                  <li>
-                    <p> 
-                      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">Día 5</button>
-                    </p>
-                    <div class="collapse" id="collapseExample5">
-                      <div class="card card-body">Secciones y temas.</div>
-                    </div>
-                  </li>
-                  <li>
-                    <p> 
-                      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">Día 6</button>
-                    </p>
-                    <div class="collapse" id="collapseExample6">
-                      <div class="card card-body">Secciones y temas.</div>
-                    </div>
-                  </li>
-                  <li>
-                    <p> 
-                      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">Día 7</button>
-                    </p>
-                    <div class="collapse" id="collapseExample7">
-                      <div class="card card-body">Secciones y temas.</div>
-                    </div>
-                  </li>
-                  <li>
-                    <p> 
-                      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">Día 8</button>
-                    </p>
-                    <div class="collapse" id="collapseExample8">
-                      <div class="card card-body">Secciones y temas.</div>
-                    </div>
-                  </li>
-                  <li>
-                    <p> 
-                      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9">Día 9</button>
-                    </p>
-                    <div class="collapse" id="collapseExample9">
-                      <div class="card card-body">Secciones y temas.</div>
-                    </div>
-                  </li>
-                  <li>
-                    <p> 
-                      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample10">Día 10</button>
-                    </p>
-                    <div class="collapse" id="collapseExample10">
-                      <div class="card card-body">Secciones y temas.</div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="container"><img class="rounded mx-auto d-block" src="images/generico.jpg" alt="..."/></div>
-          <ul class="copy">
-            <li>Clases en vivo por 10 días</li>
-            <li>Aprendizaje colaborativo</li>
-            <li>Metodologías diferentes</li>
-            <li>Dinámicas continuas</li>
-          </ul>
-        </div>
-      </div>
+      </div><span class="badge rounded-pill bg-primary">Nosotros</span>
     </main>
     <footer class="bg-light text-center text-lg-start">
       <div class="text-center p-3">© 2020 Copyright: <a class="text-dark" href="#">Edullka</a></div>
