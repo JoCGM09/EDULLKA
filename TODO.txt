@@ -1,0 +1,16 @@
+--Pasos Git (José):
+1. git pull upstream master (sin reemplazo)
+1. git pull -r upstream master (reemplaza todo)
+2. git add .
+3. git commit -am ""
+4. git pull upstream master
+5. git pull origin ramajose
+6. En github hacer pull request
+7. Listo
+
+--Lo que falta:
+1. Estructura, contenido y diseño de la sección Nosotros
+2. Diseño y contenido de la página Información
+3. Fondo del header (Manuel)
+4. Tmre me olvidé del footer: botones Facebook, Correo y Github (opcional)
+5. Nada más creo.
