@@ -9,8 +9,8 @@
 7. Listo
 
 --Lo que falta:
-1. Estructura, contenido y diseño de la sección Nosotros
-2. Diseño y contenido de la página Información
-3. Fondo del header (Manuel)
-4. Tmre me olvidé del footer: botones Facebook, Correo y Github (opcional)
-5. Nada más creo.
+1. Estructura, contenido y diseño de la sección Nosotros (LISTO)
+2. Diseño y contenido de la página Información (Aún falta)
+3. Fondo del header (Manuel) (Aún falta)
+4. Tmre me olvidé del footer: botones Facebook, Correo y Github (opcional) (LISTO)
+5. Páginas de Información personalizadas, dependiendo del campamento.
