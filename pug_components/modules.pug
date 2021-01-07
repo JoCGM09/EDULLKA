@@ -1,19 +1,74 @@
 span.badge.rounded-pill.bg-primary Metodología
-.row
-    .col-md-5
-        .container.mt-1.mb-2
-            .row   
-                .col-md-6.offset-md-2
-                    ul.timeline
-                        each numero in numeros
-                            +modulo(numero)
-    .col-md-6
-                .container
-                    img.rounded.mx-auto.d-block(
-                        src="images/generico.jpg"
-                        alt="..."
-                    )
-                ul.copy
-                    each subtitulo in subtitulos
-                        li=subtitulo 
+.row.row-cols-1.row-cols-md-1.g-4
+    .informacion
+        +EscudoInformacion(0)
+        .texto
+            +InformacionCampamento(0)
+    section.timeline
+        .container
+            .timeline-item
+                .timeline-img
+                .timeline-content.js--fadeInLeft
+                    h2 Sección 1
+                    .date 12 ENERO
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
+            .timeline-item
+                .timeline-img
+                .timeline-content.js--fadeInRight
+                    div
+                        h2.derecha Sección 1
+                        .date 12 ENERO
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
+            .timeline-item
+                .timeline-img
+                .timeline-content.js--fadeInLeft
+                    h2 Sección 1
+                    .date 12 ENERO
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
+            .timeline-item
+                .timeline-img
+                .timeline-content.js--fadeInRight
+                    div
+                        h2.derecha Sección 1
+                        .date 12 ENERO
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
+            .timeline-item
+                .timeline-img
+                .timeline-content.js--fadeInLeft
+                    h2 Sección 1
+                    .date 12 ENERO
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
+            .timeline-item
+                .timeline-img
+                .timeline-content.js--fadeInRight
+                    div
+                        h2.derecha Sección 1
+                        .date 12 ENERO
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
+            .timeline-item
+                .timeline-img
+                .timeline-content.js--fadeInLeft
+                    h2 Sección 1
+                    .date 12 ENERO
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
+            .timeline-item
+                .timeline-img
+                .timeline-content.js--fadeInRight
+                    div
+                        h2.derecha Sección 1
+                        .date 12 ENERO
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
+            .timeline-item
+                .timeline-img
+                .timeline-content.js--fadeInLeft
+                    h2 Sección 1
+                    .date 12 ENERO
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
+            .timeline-item
+                .timeline-img
+                .timeline-content.js--fadeInRight
+                    div
+                        h2.derecha Sección 1
+                        .date 12 ENERO
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
 block modulos
