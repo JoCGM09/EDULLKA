@@ -1,5 +1,22 @@
 footer{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    width: 100%;
     .text-center{
         background-color: $bg-color--secondary;
-    }    
+        float: left;
+        width: 100%;
+    }
+    nav.redes-sociales{
+        position: absolute;
+        left: 3rem;
+        bottom: 0.2rem;
+        a{
+            color: #000;
+            font-size: 2.2rem;
+            margin-right: 20px;
+        }
+    }
 }    

@@ -77,62 +77,78 @@ header .contenedor .btn-primary:hover {
   transition: 0.4s ease;
 }
 
-nav {
+nav.navbar {
   background-color: rgba(6, 8, 9, 0.75) !important;
-  height: 3.8rem;
+  height: 3.5rem;
   width: 100%;
-  padding: 2.5rem 6rem;
+  padding: 2rem 6rem;
   z-index: 1 !important;
   position: -webkit-sticky;
   position: sticky;
   box-shadow: 0 0 3px #000;
 }
-nav .navbar-nav {
+nav.navbar .navbar-nav {
   width: 100%;
   text-align: center;
   align-items: center;
   justify-content: center;
   display: flex;
 }
-nav .navbar-nav li a {
+nav.navbar .navbar-nav li a {
+  padding: 0.5rem 2rem 0 2rem !important;
+}
+nav.navbar .navbar-nav li a h3 {
   font-size: 1.6rem;
-  font-weight: 700;
-  padding: 0 2rem !important;
+  padding-bottom: 0.2rem;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
+}
+nav.navbar .navbar-nav li a h3:hover {
+  border-bottom: 1.5px solid #fff;
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: #fff !important;
 }
 
-a i {
-  background-color: rgba(13, 75, 153, 0.9);
+.contenedor a i {
+  background-color: rgba(77, 194, 71, 0.95);
   border-radius: 50%;
-  padding: 0.7rem 0.9rem;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  padding: 0.6rem 0.8rem 0.7rem 0.9rem;
+  bottom: 1.7rem;
+  right: 1.7rem;
   color: #fff;
   position: fixed;
-  font-size: 3.5rem;
+  font-size: 3rem;
   z-index: 500;
-  box-shadow: 0 0 7px #000;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 6px;
+  transition: all 0.3s ease;
+}
+.contenedor a i:hover {
+  transform: scale(1.1);
 }
 
 main {
   padding: 3rem;
   padding-top: 0;
+  text-align: center;
 }
 main span.badge {
   margin-bottom: 1.5rem;
-  margin-left: 4rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   padding: 1rem 2rem;
-  font-size: 2rem;
-  font-weight: 600;
-  background-color: #325d7f !important;
-  border-radius: 1.5rem !important;
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #325d7f !important;
+  background-color: transparent !important;
+}
+main .row {
+  border-top: 2px solid #FF8C03;
 }
 main .row .nombre-campamento {
   text-align: center;
@@ -149,6 +165,29 @@ main .row a.btn {
 main .row a.btn.btn-success.btn-lg {
   background-color: #FF8C03 !important;
   border-color: #FF8C03;
+}
+main .row a.btn.btn-success.btn-lg:hover {
+  background-color: #e88205 !important;
+  border-color: #e88205;
+}
+main .row p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: justify;
+  color: #000;
+  padding: 0 2rem;
+}
+main .row h3 {
+  color: #FF8C03;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+main .row img {
+  width: 100%;
+  padding: 1rem 15% 1rem 15%;
 }
 main .row .col .card {
   align-items: center;
@@ -168,6 +207,18 @@ main .row .col .card .card-body {
 }
 main .row .col .card .card-footer {
   width: 100%;
+}
+main .row .col .card:hover {
+  border: 1px solid #FF8C03;
+}
+main .row .col .card:hover img {
+  filter: saturate(130%);
+}
+main .row .col .card:hover img.desenfoque {
+  filter: blur(13px);
+}
+main .row .col .card.disabled:hover {
+  border: 0.5px solid #e1e1e1;
 }
 main .row .col-md-5 {
   align-content: flex-start;
@@ -227,6 +278,25 @@ main ul.timeline > li:before {
   z-index: 400;
 }
 
+footer {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  width: 100%;
+}
 footer .text-center {
   background-color: rgba(0, 0, 0, 0.2);
+  float: left;
+  width: 100%;
+}
+footer nav.redes-sociales {
+  position: absolute;
+  left: 3rem;
+  bottom: 0.2rem;
+}
+footer nav.redes-sociales a {
+  color: #000;
+  font-size: 2.2rem;
+  margin-right: 20px;
 }

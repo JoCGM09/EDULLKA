@@ -1,18 +1,21 @@
 main{
     padding: 3rem;
     padding-top: 0;
+    text-align: center;
     
     span.badge{
         margin-bottom: 1.5rem;
-        margin-left: 4rem;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         padding: 1rem 2rem;
-        font-size: 2rem;
-        font-weight: 600;
-        background-color: $color-secondary !important;
-        border-radius: 1.5rem !important;
+        font-family: 'Oswald', sans-serif;
+        font-size: 3rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $color-secondary !important;
+        background-color: transparent !important;
     }
     .row{
+        border-top: 2px solid $color-inscribete;
         .nombre-campamento{
             text-align: center;
             text-transform: uppercase;
@@ -28,6 +31,29 @@ main{
         a.btn.btn-success.btn-lg{
             background-color: $color-inscribete !important;
             border-color: $color-inscribete;
+        }
+        a.btn.btn-success.btn-lg:hover{
+            background-color: $color-inscribete-hover !important;
+            border-color: $color-inscribete-hover;
+        }
+        p{
+            font-weight: 500;
+            font-size: 1.4rem;
+            text-align: justify;
+            color: #000;
+            padding: 0 2rem;
+        }
+        h3{
+            color: $color-inscribete;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+        }
+        img{
+            width: 100%;
+            padding: 1rem 15% 1rem 15%;
         }
         .col{
             .card{
@@ -48,6 +74,18 @@ main{
                 .card-footer{
                     width: 100%;
                 }
+            }
+            .card:hover{
+                border: 1px solid $color-inscribete;
+                img{
+                    filter: saturate(130%);
+                }
+                img.desenfoque{
+                    filter: blur(13px);
+                }
+            }
+            .card.disabled:hover{
+                border: 0.5px solid #e1e1e1;
             }
         }
         .col-md-5{
