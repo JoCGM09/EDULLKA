@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 body {
   background-color: #eaeaea;
   background-attachment: fixed;
@@ -83,7 +84,6 @@ nav.navbar {
   width: 100%;
   padding: 2rem 6rem;
   z-index: 1 !important;
-  position: -webkit-sticky;
   position: sticky;
   box-shadow: 0 0 3px #000;
 }
@@ -147,6 +147,9 @@ main span.badge {
   color: #325d7f !important;
   background-color: transparent !important;
 }
+main .container-fluid {
+  padding: 0 6rem;
+}
 main .row {
   border-top: 2px solid #FF8C03;
 }
@@ -200,7 +203,7 @@ main .row .col .card img {
   padding: 1.5rem;
 }
 main .row .col .card img.desenfoque {
-  filter: blur(13px);
+  filter: blur(7px);
 }
 main .row .col .card .card-body {
   width: 100%;
@@ -215,7 +218,7 @@ main .row .col .card:hover img {
   filter: saturate(130%);
 }
 main .row .col .card:hover img.desenfoque {
-  filter: blur(13px);
+  filter: blur(5px);
 }
 main .row .col .card.disabled:hover {
   border: 0.5px solid #e1e1e1;
@@ -299,4 +302,146 @@ footer nav.redes-sociales a {
   color: #000;
   font-size: 2.2rem;
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  header nav.navbar {
+    height: 5rem;
+    padding: 0 0;
+    background-color: rgba(6, 8, 9, 0.9) !important;
+  }
+  header nav.navbar .container-fluid {
+    padding: 0 0;
+  }
+  header nav.navbar .container-fluid .navbar-toggler-icon {
+    color: #fff !important;
+  }
+  header nav.navbar .container-fluid .show {
+    margin-top: 2.47rem;
+  }
+  header nav.navbar .container-fluid .navbar-nav {
+    height: 14rem;
+    background-color: rgba(6, 8, 9, 0.9);
+    width: 100%;
+    display: block;
+  }
+  header nav.navbar .container-fluid .navbar-nav li a h3 {
+    font-size: 2.4rem;
+  }
+
+  main .container-fluid {
+    padding: 0 1rem;
+  }
+  main .container-fluid p {
+    padding: 0 5rem;
+  }
+  main .container-fluid h3 {
+    font-size: 1.8rem;
+  }
+  main .container-fluid .col .card img {
+    height: 220px;
+    width: 220px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main span.badge {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  main .container-fluid .col .card img {
+    height: 180px;
+    width: 180px;
+  }
+  main .container-fluid .col .card .card-body h2 {
+    font-size: 1.4rem;
+  }
+
+  footer {
+    display: block;
+    background-color: rgba(225, 225, 225, 0.8);
+  }
+  footer nav.redes-sociales {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    padding-top: 1rem;
+    background-color: transparent !important;
+  }
+  footer nav.redes-sociales a {
+    font-size: 3rem;
+    padding: 0 1.5rem;
+    margin-right: 0;
+  }
+  footer .text-center {
+    font-size: 1.6rem;
+    background-color: rgba(225, 225, 225, 0.8);
+  }
+}
+@media only screen and (max-width: 480px) {
+  main span.badge {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  main .container-fluid .col .card img {
+    height: 240px;
+    width: 240px;
+  }
+  main .container-fluid .col .card .card-body h2 {
+    font-size: 2rem;
+  }
+  main .container-fluid .row img {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  main .container-fluid .row p {
+    padding: 0 1rem;
+  }
+
+  footer nav.redes-sociales a {
+    padding: 0 1rem;
+    margin-right: 0;
+  }
+  footer .text-center {
+    font-size: 1.2rem;
+    padding-top: 0 !important;
+  }
+}
+@media only screen and (max-width: 440px) {
+  main .row .timeline-content h2 {
+    margin-top: 3.2rem;
+  }
+  main .row .timeline-content ul {
+    margin-top: 0;
+  }
+  main .row .timeline-content .derecha-list {
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  main span.badge {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  main .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  main .container-fluid .col .card img {
+    height: 180px;
+    width: 180px;
+  }
+  main .container-fluid .row img {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  main .container-fluid .row p {
+    font-size: 1.1rem;
+  }
+  main .container-fluid .row h3 {
+    font-size: 1.4rem;
+  }
 }

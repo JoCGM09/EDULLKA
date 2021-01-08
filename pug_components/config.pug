@@ -69,9 +69,44 @@ mixin CampamentoInactivo(tema)
             .card-footer
                 small.text-muted #{fechaInicio[0]}
 mixin EscudoInformacion(numero)
-    img(src=`images/${escudos[numero]}.jpg`)
+    img.rounded.mx-auto.d-block(src=`images/${escudos[numero]}.jpg`)
 mixin InformacionCampamento(numero)
     -var titulo = escudos[numero]
     -var descripcion = descripciones[numero]
     h2 Campamento de #{titulo}
-    p=descripcion
+    ul
+        li 10 días
+        li +30 horas
+        li Cientos de ejercicios
+        li Concurso de finalización
+        li Certificado
+mixin ItemIzquierdaTimeline(num)
+    -var numero = numeros[num-1]
+    -var fecha = 11 + num
+    .timeline-item
+        .timeline-img
+        .timeline-content.js--fadeInLeft
+            h2 Sección #{numero}
+            .date #{fecha} ENERO
+            ul
+                if block
+                    block
+                else
+                    li Hola
+mixin ItemDerechaTimeline(num)
+    -var numero = numeros[num-1]
+    -var fecha = 11 + num
+    .timeline-item
+        .timeline-img
+        .timeline-content.js--fadeInRight
+            div
+                h2.derecha Sección #{numero}
+                .date #{fecha} ENERO
+            ul.derecha-list
+                if block
+                    block
+                else
+                    li Hola
+mixin TemaPorSeccion(texto)
+    -var tema = texto
+    li #{tema}

@@ -1,0 +1,162 @@
+@media only screen and (max-width: 991px){
+    header{
+        nav.navbar{
+            height: 5rem;
+            padding: 0 0;
+            background-color:  rgba(6, 8, 9, 0.9) !important;
+            .container-fluid{
+                padding: 0 0;
+                .navbar-toggler-icon{
+                    color: #fff !important;
+                }
+                .show{
+                    margin-top: 2.47rem;
+                }
+                .navbar-nav{
+                    height: 14rem;
+                    background-color: rgba(6, 8, 9, 0.9);
+                    width: 100%;
+                    display: block;
+                    li{
+                        a{
+                            h3{
+                                font-size: 2.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .row{
+            .informacion{
+                padding: 0 1rem;
+                img{
+                    width: 280px;
+                    height: 280px;
+                }
+                .texto{
+                    padding: 0 0 0 3rem;
+                    h2{
+                        font-size: 2.3rem;
+                        margin-top: 1rem;
+                    }
+                    ul{
+                        margin-top: 1rem;
+                        li{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    main{
+        .row{
+            .informacion{
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+                .texto{
+                    h2{
+                        font-size: 1.8rem;
+                    }
+                    ul{
+                        li{
+                            font-size: 1.2rem;
+                            margin-bottom: 2px;
+                        }
+                        li::before{
+                            padding-right: 10px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            h3{
+                margin-top: 2rem;
+            }
+        }
+    }
+    footer{
+        display: block;
+        background-color: rgba(225,225,225,0.8);
+        nav.redes-sociales{
+            position: relative;
+            left: auto;
+            bottom: auto;
+            padding-top: 1rem;
+            background-color: transparent !important;
+            a{
+                font-size: 3rem;
+                padding: 0 1.5rem;
+                margin-right: 0;
+            }
+        }
+        .text-center{
+            font-size: 1.6rem;
+            background-color: rgba(225,225,225,0.8);
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    main{
+        span.badge{
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        .row{
+            .informacion{
+                margin-top: 1.5rem;
+                display: block;
+                img{
+                    padding: 1.5rem;
+                }
+                .texto{
+                    padding: 0 1rem;
+                    h2{
+                        margin-top: 1.5rem;
+                        font-size: 2rem;
+                    }
+                }
+            }
+            h3{
+                margin-top: 1rem;
+                font-size: 2rem;
+            }
+        }
+    }
+    footer{
+        nav.redes-sociales{
+            a{
+                padding: 0 1rem;
+                margin-right: 0;
+            }
+        }
+        .text-center{
+            font-size: 1.2rem;
+            padding-top: 0 !important;
+        }
+    }
+}
+@media only screen and (max-width: 440px){
+    main{
+        .row{
+            .timeline-content{
+                h2{
+                    margin-top: 3.2rem;
+                }
+                ul{
+                    margin-top: 0;
+                }
+                .derecha-list{
+                    margin-top: 4rem;
+                }
+            }
+        }
+    }
+}

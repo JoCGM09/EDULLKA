@@ -1,5 +1,7 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 body {
   background-color: #eaeaea;
   background-attachment: fixed;
@@ -16,7 +18,6 @@ nav.navbar {
   width: 100%;
   padding: 2rem 6rem;
   z-index: 1 !important;
-  position: -webkit-sticky;
   position: sticky;
   box-shadow: 0 0 3px #000;
 }
@@ -103,15 +104,15 @@ main .row .informacion {
 }
 main .row .informacion img {
   background-color: #fff;
-  padding: 2rem;
-  border-radius: 3rem;
-  border: 2px solid #e1e1e1;
+  padding: 2rem !important;
+  border-radius: 3rem !important;
+  border: 2px solid #e1e1e1 !important;
   width: 350px;
   height: 350px;
-  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 25px -12px rgba(0, 0, 0, 0.3) !important;
 }
 main .row .informacion .texto {
-  padding: 0 4rem;
+  padding: 0 0 0 6rem;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -124,9 +125,28 @@ main .row .informacion .texto h2 {
   color: #FF8C03;
   margin-top: 2rem;
 }
-main .row .informacion .texto p {
-  padding-top: 1rem;
-  text-align: justify;
+main .row .informacion .texto ul {
+  margin-top: 3rem;
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+}
+main .row .informacion .texto ul li {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #212121;
+  line-height: 26px;
+}
+main .row .informacion .texto ul li::before {
+  font-family: "Fontawesome";
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  font-size: 20px;
+  color: green;
+  -webkit-font-smoothing: antialiased;
+  content: "";
 }
 main .row section {
   padding: 50px 0;
@@ -137,7 +157,21 @@ main .row h1 {
   letter-spacing: 3px;
   font-weight: 400;
 }
+main .row h3 {
+  width: 100%;
+  text-align: left;
+  font-size: 2.5rem;
+  padding-bottom: 0rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  border-left: 8px solid #FF8C03;
+  margin-top: 4rem;
+  color: #325d7f;
+}
 main .row .timeline {
+  padding-top: 0;
   position: relative;
 }
 main .row .timeline::before {
@@ -188,12 +222,17 @@ main .row .timeline-content {
   background: #f5f5f5;
   box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
 }
-main .row .timeline-content p {
+main .row .timeline-content ul {
   margin-top: 1rem;
-  text-align: justify;
+  list-style: none;
+  padding-left: 0;
 }
 main .row .timeline-content h2 {
   color: #FF8C03;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2.2rem;
 }
 main .row .timeline-content .derecha {
   right: 30px;
@@ -327,4 +366,136 @@ footer nav.redes-sociales a {
   color: #000;
   font-size: 2.2rem;
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  header nav.navbar {
+    height: 5rem;
+    padding: 0 0;
+    background-color: rgba(6, 8, 9, 0.9) !important;
+  }
+  header nav.navbar .container-fluid {
+    padding: 0 0;
+  }
+  header nav.navbar .container-fluid .navbar-toggler-icon {
+    color: #fff !important;
+  }
+  header nav.navbar .container-fluid .show {
+    margin-top: 2.47rem;
+  }
+  header nav.navbar .container-fluid .navbar-nav {
+    height: 14rem;
+    background-color: rgba(6, 8, 9, 0.9);
+    width: 100%;
+    display: block;
+  }
+  header nav.navbar .container-fluid .navbar-nav li a h3 {
+    font-size: 2.4rem;
+  }
+
+  main .row .informacion {
+    padding: 0 1rem;
+  }
+  main .row .informacion img {
+    width: 280px;
+    height: 280px;
+  }
+  main .row .informacion .texto {
+    padding: 0 0 0 3rem;
+  }
+  main .row .informacion .texto h2 {
+    font-size: 2.3rem;
+    margin-top: 1rem;
+  }
+  main .row .informacion .texto ul {
+    margin-top: 1rem;
+  }
+  main .row .informacion .texto ul li {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .row .informacion img {
+    width: 200px;
+    height: 200px;
+  }
+  main .row .informacion .texto h2 {
+    font-size: 1.8rem;
+  }
+  main .row .informacion .texto ul li {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+  }
+  main .row .informacion .texto ul li::before {
+    padding-right: 10px;
+    font-size: 15px;
+  }
+  main .row h3 {
+    margin-top: 2rem;
+  }
+
+  footer {
+    display: block;
+    background-color: rgba(225, 225, 225, 0.8);
+  }
+  footer nav.redes-sociales {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    padding-top: 1rem;
+    background-color: transparent !important;
+  }
+  footer nav.redes-sociales a {
+    font-size: 3rem;
+    padding: 0 1.5rem;
+    margin-right: 0;
+  }
+  footer .text-center {
+    font-size: 1.6rem;
+    background-color: rgba(225, 225, 225, 0.8);
+  }
+}
+@media only screen and (max-width: 480px) {
+  main span.badge {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  main .row .informacion {
+    margin-top: 1.5rem;
+    display: block;
+  }
+  main .row .informacion img {
+    padding: 1.5rem;
+  }
+  main .row .informacion .texto {
+    padding: 0 1rem;
+  }
+  main .row .informacion .texto h2 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+  }
+  main .row h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  footer nav.redes-sociales a {
+    padding: 0 1rem;
+    margin-right: 0;
+  }
+  footer .text-center {
+    font-size: 1.2rem;
+    padding-top: 0 !important;
+  }
+}
+@media only screen and (max-width: 440px) {
+  main .row .timeline-content h2 {
+    margin-top: 3.2rem;
+  }
+  main .row .timeline-content ul {
+    margin-top: 0;
+  }
+  main .row .timeline-content .derecha-list {
+    margin-top: 4rem;
+  }
 }
