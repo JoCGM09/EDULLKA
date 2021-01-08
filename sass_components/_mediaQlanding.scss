@@ -1,0 +1,205 @@
+@media only screen and (max-width: 991px) {
+    header {
+        nav.navbar {
+            height: 5rem;
+            padding: 0 0;
+            background-color: rgba(6, 8, 9, 0.9) !important;
+
+            .container-fluid {
+                padding: 0 0;
+
+                .navbar-toggler-icon {
+                    color: #fff !important;
+                }
+
+                .show {
+                    margin-top: 2.47rem;
+                }
+
+                .navbar-nav {
+                    height: 14rem;
+                    background-color: rgba(6, 8, 9, 0.9);
+                    width: 100%;
+                    display: block;
+
+                    li {
+                        a {
+                            h3 {
+                                font-size: 2.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .container-fluid{
+            padding: 0 1rem;
+            p{
+                padding: 0 5rem;
+            }
+            h3{
+                font-size: 1.8rem;
+            }
+            .col{
+                .card{
+                    img{
+                        height: 220px;
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        span.badge {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        .container-fluid{
+            .col{
+                .card{
+                    img{
+                        height: 180px;
+                        width: 180px;
+                    }
+                    .card-body{
+                        h2{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        display: block;
+        background-color: rgba(225, 225, 225, 0.8);
+
+        nav.redes-sociales {
+            position: relative;
+            left: auto;
+            bottom: auto;
+            padding-top: 1rem;
+            background-color: transparent !important;
+
+            a {
+                font-size: 3rem;
+                padding: 0 1.5rem;
+                margin-right: 0;
+            }
+        }
+
+        .text-center {
+            font-size: 1.6rem;
+            background-color: rgba(225, 225, 225, 0.8);
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        span.badge {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+        .container-fluid{
+            .col{
+                .card{
+                    img{
+                        height: 240px;
+                        width: 240px;
+                    }
+                    .card-body{
+                        h2{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+            .row{
+                img{
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                }
+                p{
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+
+    footer {
+        nav.redes-sociales {
+            a {
+                padding: 0 1rem;
+                margin-right: 0;
+            }
+        }
+
+        .text-center {
+            font-size: 1.2rem;
+            padding-top: 0 !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    main {
+        .row {
+            .timeline-content {
+                h2 {
+                    margin-top: 3.2rem;
+                }
+
+                ul {
+                    margin-top: 0;
+                }
+
+                .derecha-list {
+                    margin-top: 4rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    main {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        span.badge {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        .container-fluid{
+            padding-left: 0;
+            padding-right: 0;
+            .col{
+                .card{
+                    img{
+                        height: 180px;
+                        width: 180px;
+                    }
+                }
+            }
+            .row{
+                img{
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                }
+                p{
+                    font-size: 1.1rem;
+                }
+                h3{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

@@ -5,12 +5,9 @@ block contenidos
         main#main 
             include pug_components/front.pug
             block frontal
-            .container 
+            .container-fluid
                 .row.row-cols-1.row-cols-md-3.g-4
                     +CampamentoActivo(0, 1)
-                    +CampamentoActivo(1, 1)
-                    +CampamentoActivo(2, 1)
-                    +CampamentoInactivo('c')
-                    +CampamentoInactivo('c')
+                    +CampamentoInactivo('java')
                     +CampamentoInactivo('c')
             include pug_components/about.pug

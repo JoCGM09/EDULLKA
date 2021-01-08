@@ -1,74 +1,41 @@
-span.badge.rounded-pill.bg-primary Metodología
+span.badge.rounded-pill.bg-primary Más Información
 .row.row-cols-1.row-cols-md-1.g-4
     .informacion
         +EscudoInformacion(0)
         .texto
             +InformacionCampamento(0)
+    h3 Temario
     section.timeline
         .container
-            .timeline-item
-                .timeline-img
-                .timeline-content.js--fadeInLeft
-                    h2 Sección 1
-                    .date 12 ENERO
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
-            .timeline-item
-                .timeline-img
-                .timeline-content.js--fadeInRight
-                    div
-                        h2.derecha Sección 1
-                        .date 12 ENERO
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
-            .timeline-item
-                .timeline-img
-                .timeline-content.js--fadeInLeft
-                    h2 Sección 1
-                    .date 12 ENERO
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
-            .timeline-item
-                .timeline-img
-                .timeline-content.js--fadeInRight
-                    div
-                        h2.derecha Sección 1
-                        .date 12 ENERO
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
-            .timeline-item
-                .timeline-img
-                .timeline-content.js--fadeInLeft
-                    h2 Sección 1
-                    .date 12 ENERO
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
-            .timeline-item
-                .timeline-img
-                .timeline-content.js--fadeInRight
-                    div
-                        h2.derecha Sección 1
-                        .date 12 ENERO
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
-            .timeline-item
-                .timeline-img
-                .timeline-content.js--fadeInLeft
-                    h2 Sección 1
-                    .date 12 ENERO
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
-            .timeline-item
-                .timeline-img
-                .timeline-content.js--fadeInRight
-                    div
-                        h2.derecha Sección 1
-                        .date 12 ENERO
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
-            .timeline-item
-                .timeline-img
-                .timeline-content.js--fadeInLeft
-                    h2 Sección 1
-                    .date 12 ENERO
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
-            .timeline-item
-                .timeline-img
-                .timeline-content.js--fadeInRight
-                    div
-                        h2.derecha Sección 1
-                        .date 12 ENERO
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
+            +ItemIzquierdaTimeline(1)
+                +TemaPorSeccion('¿Qué capacidades tiene Python?')
+                +TemaPorSeccion('¿En qué áreas se puede usar Python?')
+                +TemaPorSeccion('¿Qué puedo crear con Python?')
+            +ItemDerechaTimeline(2)
+                +TemaPorSeccion('Gestor de paquetes pip install.')
+                +TemaPorSeccion('Entorno virtual.')
+                +TemaPorSeccion('Repositorios git hub.')
+                +TemaPorSeccion('Tipos de datos (booleano, entero, flotante, listas, tuplas, diccionarios, conjuntos SET)')
+            +ItemIzquierdaTimeline(3)
+                +TemaPorSeccion('Entrada y salida estándar.')
+                +TemaPorSeccion('Operadores, flujo de ejecución, sentencias condicionales, bucles, for y while.')
+            +ItemDerechaTimeline(4)
+                +TemaPorSeccion('Métodos de listas, tuplas y diccionarios.')
+                +TemaPorSeccion('Introducción a las funciones.')
+                +TemaPorSeccion('Manejo de errores.')
+            +ItemIzquierdaTimeline(5)
+                +TemaPorSeccion('POO: clases y objetos, herencia, composición.')
+                +TemaPorSeccion('Módulos vs Clases.')
+            +ItemDerechaTimeline(6)
+                +TemaPorSeccion('Manejar ficheros de datos con CSV.')
+                +TemaPorSeccion('Programación funcional (lambda, map, reviews, filter, zip)')
+            +ItemIzquierdaTimeline(7)
+                +TemaPorSeccion('Estructura de datos.')
+                +TemaPorSeccion('Pilas, colas, listas enlazadas, árboles, binario, grafos.')
+            +ItemDerechaTimeline(8)
+                +TemaPorSeccion('MVC con flask.')
+            +ItemIzquierdaTimeline(9)
+                +TemaPorSeccion('Numpy, mathplotlib y pandas.')
+            +ItemDerechaTimeline(10)
+                +TemaPorSeccion('Concurso.')
 block modulos
