@@ -45,7 +45,7 @@ main{
                     align-items: center;
                     justify-content: center;
                     display: flex;
-                    background-image: #e2e2e2;
+                    
                     img{
                         height: 250px;
                         width: 250px;
@@ -60,6 +60,9 @@ main{
                     .card-footer{
                         width: 100%;
                     }
+                }
+                .python{
+                    background-image: url(../images/python.png) !important;
                 }
                 .card:hover{
                     border: 1px solid $color-inscribete;

@@ -180,7 +180,6 @@ main .container-fluid .row .col .card {
   align-items: center;
   justify-content: center;
   display: flex;
-  background-image: #e2e2e2;
 }
 main .container-fluid .row .col .card img {
   height: 250px;
@@ -195,6 +194,9 @@ main .container-fluid .row .col .card .card-body {
 }
 main .container-fluid .row .col .card .card-footer {
   width: 100%;
+}
+main .container-fluid .row .col .python {
+  background-image: url(../images/python.png) !important;
 }
 main .container-fluid .row .col .card:hover {
   border: 1px solid #FF8C03;
