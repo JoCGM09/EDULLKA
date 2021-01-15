@@ -16,142 +16,83 @@ main{
     }
     .container-fluid{
         padding: 0 6rem;
-    }
-    .row{
-        border-top: 2px solid $color-inscribete;
-        .nombre-campamento{
-            text-align: center;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-            font-weight: 600;
-        }
-        a.btn{
-            width: 100%;
-            border-radius: 2rem;
-            margin-bottom: 1rem;
-        }
-        a.btn.btn-success.btn-lg{
-            background-color: $color-inscribete !important;
-            border-color: $color-inscribete;
-        }
-        a.btn.btn-success.btn-lg:hover{
-            background-color: $color-inscribete-hover !important;
-            border-color: $color-inscribete-hover;
-        }
-        p{
-            font-weight: 500;
-            font-size: 1.4rem;
-            text-align: justify;
-            color: #000;
-            padding: 0 2rem;
-        }
-        h3{
-            color: $color-inscribete;
-            font-size: 1.2rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-top: 1.5rem;
-            margin-bottom: 0;
-        }
-        img{
-            width: 100%;
-            padding: 1rem 15% 1rem 15%;
-        }
-        .col{
-            .card{
-                align-items: center;
-                justify-content: center;
-                display: flex;
-                img{
-                    height: 250px;
-                    width: 250px;
-                    padding: 1.5rem;
-                }
-                img.desenfoque{
-                    filter: blur(7px);
-                }
-                .card-body{
-                    width: 100%;
-                }
-                .card-footer{
-                    width: 100%;
-                }
+        .row{
+            border-top: 2px solid $color-inscribete;
+            padding-top: 0.8rem;
+            .nombre-campamento{
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+                font-size: 1.8rem;
+                font-weight: 600;
             }
-            .card:hover{
-                border: 1px solid $color-inscribete;
-                img{
-                    filter: saturate(130%);
-                }
-                img.desenfoque{
-                    filter: blur(5px);
-                }
-            }
-            .card.disabled:hover{
-                border: 0.5px solid #e1e1e1;
-            }
-        }
-        .col-md-5{
-            align-content: flex-start;
-        }
-        .col-md-6{
-            .container{
+            a.btn{
                 width: 100%;
-                background-color: $bg-color--middle;
-                height: 20rem;
-
-                img{
-                    height: 20rem;
-                    padding: 1rem;
-                }    
+                border-radius: 2rem;
+                margin-bottom: 1rem;
             }
-            ul.copy{
-                margin-top: 2rem;
-                list-style-type: circle;
-                font-weight: 500;
-                font-size: 1.2rem;
-            }    
-        }        
-    }
-    ul.timeline{
-            list-style-type: none;
-            position: relative;
-            
-            p{
-                margin-bottom: 0.6rem;
-
-                button{
-                    width: 7rem;
+            a.btn.btn-success.btn-lg{
+                background-color: $color-inscribete !important;
+                border-color: $color-inscribete;
+            }
+            a.btn.btn-success.btn-lg:hover{
+                background-color: $color-inscribete-hover !important;
+                border-color: $color-inscribete-hover;
+            }
+            .col{
+                padding: 0 1rem;
+                .card{
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    background-image: #e2e2e2;
+                    img{
+                        height: 250px;
+                        width: 250px;
+                        padding: 1.5rem;
+                    }
+                    img.desenfoque{
+                        filter: blur(7px);
+                    }
+                    .card-body{
+                        width: 100%;
+                    }
+                    .card-footer{
+                        width: 100%;
+                    }
+                }
+                .card:hover{
+                    border: 1px solid $color-inscribete;
+                    img{
+                        filter: saturate(130%);
+                    }
+                    img.desenfoque{
+                        filter: blur(5px);
+                    }
+                }
+                .card.disabled:hover{
+                    border: 0.5px solid #e1e1e1;
                 }
             }
-            .collapse{
-                width: 15rem !important;
-            }    
+            p{
+                font-weight: 500;
+                font-size: 1.4rem;
+                text-align: justify;
+                color: #000;
+                padding: 0 2rem;
+            }
+            h3{
+                color: $color-inscribete;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-top: 1.5rem;
+                margin-bottom: 0;
+            }
+            img{
+                width: 100%;
+                padding: 1rem 5% 1rem 5%;
+            }     
+        }
     }
-    ul.timeline:before{
-        content: ' ';
-        background: $bg-color--secondary;
-        display: inline-block;
-        position: absolute;
-        left: 29px;
-        width: 2px;
-        height: 100%;
-        z-index: 400;
-    }        
-    ul.timeline > li{
-            margin: 0.6rem 0;
-            padding-left: 3rem;
-    }
-    ul.timeline > li:before{
-        content: ' ';
-        background: $color-impact;
-        display: inline-block;
-        position: absolute;
-        border-radius: 50%;
-        border: 3px solid $color-impact;
-        left: 20px;
-        width: 20px;
-        height: 20px;
-        z-index: 400;
-    }        
 }

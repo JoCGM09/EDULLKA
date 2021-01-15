@@ -4,8 +4,9 @@ footer{
     justify-content: center;
     display: inline-flex;
     width: 100%;
+    box-shadow: 0 0 4px $color-shadow;
     .text-center{
-        background-color: $bg-color--secondary;
+        background-color: $bg-color--primary;
         float: left;
         width: 100%;
     }
