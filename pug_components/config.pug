@@ -32,7 +32,7 @@ mixin CampamentoActivo(tema, inicio)
     .col 
         .card.h-100
             img.card-img-top(
-                src=`images/${escudos[tema]}.jpg`
+                src=`images/${escudos[tema]}.png`
                 alt="..."
                 )
             .card-body
@@ -52,7 +52,7 @@ mixin CampamentoInactivo(tema)
     .col 
         .card.h-100.disabled
             img.card-img-top.desenfoque(
-                src=`images/${tema}.jpg`
+                src=`images/${tema}.png`
                 alt="..."
                 )
             .card-body
@@ -69,7 +69,7 @@ mixin CampamentoInactivo(tema)
             .card-footer
                 small.text-muted #{fechaInicio[0]}
 mixin EscudoInformacion(numero)
-    img.rounded.mx-auto.d-block(src=`images/${escudos[numero]}.jpg`)
+    img.rounded.mx-auto.d-block(src=`images/${escudos[numero]}.png`)
 mixin InformacionCampamento(numero)
     -var titulo = escudos[numero]
     -var descripcion = descripciones[numero]
