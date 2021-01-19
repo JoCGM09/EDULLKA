@@ -2,7 +2,8 @@ extend pug_components/template.pug
 block css
     link(rel="stylesheet", href="css_components/landing.css")
 block contenidos
-        main#main 
+        main#main
+            include pug_components/dynamic.pug
             include pug_components/front.pug
             block frontal
             .container-fluid
@@ -11,3 +12,4 @@ block contenidos
                     +CampamentoInactivo('java')
                     +CampamentoInactivo('c')
             include pug_components/about.pug
+            include pug_components/tribute.pug

@@ -29,8 +29,21 @@ nav.navbar{
         }  
     }      
 }
-.navbar-light .navbar-nav .nav-link{
-    color: #fff !important;
+.navbar-dark{
+    .navbar-nav{
+        .nav-link{
+            color: #fff !important;
+        }
+    }
+    .navbar-toggler{
+        border-color: #fff;
+        margin-left: 1.5rem;
+        margin-top: 0.7rem;
+        .navbar-toggler-icon{
+            border-color: #fff;
+            color: #fff;
+        }
+    }
 }
 .contenedor{
     a{

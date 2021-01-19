@@ -1,7 +1,8 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap");
 body {
   background-color: #eaeaea;
   background-attachment: fixed;
@@ -41,8 +42,17 @@ nav.navbar .navbar-nav li a h3:hover {
   border-bottom: 1.5px solid #fff;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color: #fff !important;
+}
+.navbar-dark .navbar-toggler {
+  border-color: #fff;
+  margin-left: 1.5rem;
+  margin-top: 0.7rem;
+}
+.navbar-dark .navbar-toggler .navbar-toggler-icon {
+  border-color: #fff;
+  color: #fff;
 }
 
 .contenedor a i {
@@ -365,7 +375,7 @@ footer nav.redes-sociales {
 footer nav.redes-sociales a {
   color: #000;
   font-size: 2.2rem;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -381,7 +391,7 @@ footer nav.redes-sociales a {
     color: #fff !important;
   }
   header nav.navbar .container-fluid .show {
-    margin-top: 2.47rem;
+    margin-top: 0.77rem;
   }
   header nav.navbar .container-fluid .navbar-nav {
     height: 14rem;

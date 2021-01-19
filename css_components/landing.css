@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap");
 body {
   background-color: #eaeaea;
   background-attachment: fixed;
@@ -107,8 +108,17 @@ nav.navbar .navbar-nav li a h3:hover {
   border-bottom: 1.5px solid #fff;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color: #fff !important;
+}
+.navbar-dark .navbar-toggler {
+  border-color: #fff;
+  margin-left: 1.5rem;
+  margin-top: 0.7rem;
+}
+.navbar-dark .navbar-toggler .navbar-toggler-icon {
+  border-color: #fff;
+  color: #fff;
 }
 
 .contenedor a i {
@@ -149,6 +159,19 @@ main span.badge {
 main .container-fluid {
   padding: 0 6rem;
 }
+main .container-fluid .nuestro-equipo {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 2.2rem;
+  padding-bottom: 0rem;
+  padding-left: 1rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  border-left: 8px solid #FF8C03;
+  color: #325d7f;
+}
 main .container-fluid .row {
   border-top: 2px solid #FF8C03;
   padding-top: 0.8rem;
@@ -157,13 +180,26 @@ main .container-fluid .row .nombre-campamento {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Teko", sans-serif;
 }
 main .container-fluid .row a.btn {
   width: 100%;
-  border-radius: 2rem;
+  border-radius: 0.6rem;
   margin-bottom: 1rem;
+  padding: 0.2rem 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+main .container-fluid .row a.btn i {
+  font-size: 0.9rem;
+  margin-right: 0.7rem;
+}
+main .container-fluid .row a.btn p {
+  margin-bottom: 0;
+  font-size: 1.4rem;
 }
 main .container-fluid .row a.btn.btn-success.btn-lg {
   background-color: #FF8C03 !important;
@@ -175,6 +211,12 @@ main .container-fluid .row a.btn.btn-success.btn-lg:hover {
 }
 main .container-fluid .row .col {
   padding: 0 1rem;
+  /*.python{
+      background-image: url(../images/python.png) !important;
+      background-repeat: no-repeat;
+      background-size: 290px;
+      background-position:100px -60px;
+  }*/
 }
 main .container-fluid .row .col .card {
   align-items: center;
@@ -191,12 +233,17 @@ main .container-fluid .row .col .card img.desenfoque {
 }
 main .container-fluid .row .col .card .card-body {
   width: 100%;
+  padding: 0 1rem;
+}
+main .container-fluid .row .col .card .card-body .desenfoque {
+  filter: blur(4px);
+}
+main .container-fluid .row .col .card .card-body .desenfoque:hover {
+  filter: blur(3px);
 }
 main .container-fluid .row .col .card .card-footer {
   width: 100%;
-}
-main .container-fluid .row .col .python {
-  background-image: url(../images/python.png) !important;
+  font-size: 1rem;
 }
 main .container-fluid .row .col .card:hover {
   border: 1px solid #FF8C03;
@@ -207,27 +254,105 @@ main .container-fluid .row .col .card:hover img {
 main .container-fluid .row .col .card:hover img.desenfoque {
   filter: blur(5px);
 }
+main .container-fluid .row .col .card:hover .card-body .desenfoque {
+  filter: blur(3px);
+}
 main .container-fluid .row .col .card.disabled:hover {
   border: 0.5px solid #e1e1e1;
 }
-main .container-fluid .row p {
-  font-weight: 500;
-  font-size: 1.4rem;
-  text-align: justify;
-  color: #000;
-  padding: 0 2rem;
+main .container-fluid .row .info {
+  width: 60%;
 }
-main .container-fluid .row h3 {
+main .container-fluid .row .info p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #000;
+  padding: 0 1rem;
+}
+main .container-fluid .row .info h3 {
   color: #FF8C03;
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 2.2rem;
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   margin-top: 1.5rem;
   margin-bottom: 0;
 }
-main .container-fluid .row img {
+main .container-fluid .row .imagen {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 40%;
+}
+main .container-fluid .row .imagen img {
   width: 100%;
-  padding: 1rem 5% 1rem 5%;
+  padding: 1rem 5% 5rem 5%;
+}
+main .container-fluid .sinborde {
+  border-top: none;
+  width: 100%;
+  padding: 0 2rem;
+  margin-top: 1rem;
+}
+main .container-fluid .sinborde .integrante {
+  margin: 0;
+  padding: 1rem;
+}
+main .container-fluid .sinborde .integrante img {
+  width: 150px;
+}
+main .container-fluid .sinborde .integrante h3 {
+  padding-top: 0.8rem;
+  font-size: 1.2rem;
+}
+main .container-fluid .etiquetas {
+  border: none;
+  padding: 0;
+  margin-top: 2.5rem;
+  --bs-gutter-y: 0;
+}
+main .container-fluid .etiquetas .division {
+  padding: 1.2rem;
+  margin: 0;
+}
+main .container-fluid .etiquetas .division .detalle {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #325d7f;
+  padding: 1.5rem;
+  height: 100%;
+  border-radius: 0.6rem;
+  transition: all 0.3s ease;
+}
+main .container-fluid .etiquetas .division .detalle i {
+  font-size: 3.2rem;
+  margin: 0 1.5rem 0 0;
+  color: #FF8C03;
+}
+main .container-fluid .etiquetas .division .detalle p {
+  font-size: 1.15rem;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+main .container-fluid .etiquetas .division .detalle:hover {
+  transform: translateY(-6px);
+}
+main .nosotros .row-cols-md-3 {
+  padding: 0 10rem;
+}
+main figure {
+  padding-top: 3rem;
+}
+main figure blockquote p {
+  font-size: 2.2rem;
+}
+main figure .blockquote-footer {
+  font-size: 1.2rem;
 }
 
 footer {
@@ -251,7 +376,7 @@ footer nav.redes-sociales {
 footer nav.redes-sociales a {
   color: #000;
   font-size: 2.2rem;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -267,7 +392,7 @@ footer nav.redes-sociales a {
     color: #fff !important;
   }
   header nav.navbar .container-fluid .show {
-    margin-top: 2.47rem;
+    margin-top: 1.8rem;
   }
   header nav.navbar .container-fluid .navbar-nav {
     height: 14rem;

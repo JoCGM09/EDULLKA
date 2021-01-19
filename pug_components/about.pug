@@ -1,8 +1,18 @@
 span.badge.rounded-pill.bg-primary(id="nosotros") Nosotros
-.container-fluid
+.container-fluid.nosotros
     .row.row-cols-1.row-cols-md-2.g-4
-        .col
+        .col.imagen
             img(src="images/logo-edullka.png")
-        .col
+        .col.info
             p Edullka nace con la iniciativa de mostrar las habilidades que necesitan los estudiantes y apasionados por las nuevas tecnologías en el campo de aplicación. Buscamos ser los primeros en darte la posibilidad de impulsar tus habilidades y volverte un futuro profesional competitivo en el mercado.
             h3 Por estudiantes para estudiantes
+    h2.nuestro-equipo Nuestro Equipo
+    .row.row-cols-1.row-cols-md-4.g-4.sinborde
+        +AgregarIntegrante(0)
+        +AgregarIntegrante(1)
+        +AgregarIntegrante(2)
+        +AgregarIntegrante(3)
+    .row.row-cols-1.row-cols-md-3.g-4.sinborde
+        +AgregarIntegrante(4)
+        +AgregarIntegrante(5)
+        +AgregarIntegrante(6)

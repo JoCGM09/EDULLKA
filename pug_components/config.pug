@@ -5,6 +5,7 @@
 -var link = ['https://forms.gle/4bdZokf4Ai9NPSHE7', 'https://www.google.com']
 -var escudos = ['python','java','c']
 -var descripciones = ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.","hola","hola"]
+-var integrantes = ["Jhomar Astuyauri", "Ednaly Cuadros", "José Guerra", "Pamela Villacorta", "José Ñiquen", "Jhairo Valladares", "Manuel Baella", "Persona 8"]
 
 mixin botonFrontal(texto)
     if texto == 'Inscríbete'
@@ -28,7 +29,7 @@ mixin modulo(num)
         .collapse(id='collapseExample'+num)
             .card.card-body Secciones y temas.
 mixin CampamentoActivo(tema, inicio)
-    -var titulo = escudos[tema] 
+    -var titulo = escudos[tema]
     .col 
         .card.h-100(class=titulo)
             img.card-img-top(
@@ -41,14 +42,19 @@ mixin CampamentoActivo(tema, inicio)
                     type="button"
                     href=link[tema]
                     target="_blank"
-                ) Inscríbete
+                )
+                    i.fas.fa-pencil-alt
+                    p Inscríbete
                 a.btn.btn-secondary.btn-lg(
                     type="button"
                     href="info.html" 
-                ) Información
+                )
+                    i.fas.fa-info
+                    p Información
             .card-footer
                 small.text-muted #{fechaInicio[`${inicio}`]}
 mixin CampamentoInactivo(tema)
+    -var titulo = tema
     .col 
         .card.h-100.disabled(class=tema)
             img.card-img-top.desenfoque(
@@ -56,6 +62,7 @@ mixin CampamentoInactivo(tema)
                 alt="..."
                 )
             .card-body
+                h2.nombre-campamento.desenfoque=titulo
                 a.btn.btn-success.btn-lg.disabled(
                     role="button"
                     href="#"
@@ -110,3 +117,8 @@ mixin ItemDerechaTimeline(num)
 mixin TemaPorSeccion(texto)
     -var tema = texto
     li #{tema}
+mixin AgregarIntegrante(user)
+    -var integrante = integrantes[user]
+    .col.integrante
+        img(src="images/user.png")
+        h3=integrante
