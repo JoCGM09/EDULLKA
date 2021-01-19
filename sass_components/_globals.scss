@@ -25,9 +25,10 @@ $secondary-text: #757575;
 $accent: #1e415c;
 $background-design: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%237d7d7e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap');
 
 @mixin frontal-bg-config {
     background-repeat: no-repeat;

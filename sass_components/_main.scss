@@ -16,6 +16,19 @@ main{
     }
     .container-fluid{
         padding: 0 6rem;
+        .nuestro-equipo{
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            width: 100%;
+            text-align: left;
+            font-size: 2.2rem;
+            padding-bottom: 0rem;
+            padding-left: 1rem;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            border-left: 8px solid $title;
+            color: $color-secondary;
+        }
         .row{
             border-top: 2px solid $color-inscribete;
             padding-top: 0.8rem;
@@ -23,13 +36,26 @@ main{
                 text-align: center;
                 text-transform: uppercase;
                 margin-bottom: 1rem;
-                font-size: 1.8rem;
-                font-weight: 600;
+                font-size: 3rem;
+                font-weight: 400;
+                font-family: 'Teko', sans-serif;
             }
             a.btn{
                 width: 100%;
-                border-radius: 2rem;
+                border-radius: 0.6rem;
                 margin-bottom: 1rem;
+                padding: 0.2rem 0; 
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                i{
+                    font-size: 0.9rem;
+                    margin-right: 0.7rem;
+                }
+                p{
+                    margin-bottom: 0;
+                    font-size: 1.4rem;
+                }
             }
             a.btn.btn-success.btn-lg{
                 background-color: $color-inscribete !important;
@@ -56,14 +82,25 @@ main{
                     }
                     .card-body{
                         width: 100%;
+                        padding: 0 1rem;
+                        .desenfoque{
+                            filter: blur(4px);
+                        }
+                        .desenfoque:hover{
+                            filter: blur(3px);
+                        }
                     }
                     .card-footer{
                         width: 100%;
+                        font-size: 1rem;
                     }
                 }
-                .python{
+                /*.python{
                     background-image: url(../images/python.png) !important;
-                }
+                    background-repeat: no-repeat;
+                    background-size: 290px;
+                    background-position:100px -60px;
+                }*/
                 .card:hover{
                     border: 1px solid $color-inscribete;
                     img{
@@ -72,30 +109,114 @@ main{
                     img.desenfoque{
                         filter: blur(5px);
                     }
+                    .card-body{
+                        .desenfoque{
+                            filter: blur(3px);
+                        }
+                    }
                 }
                 .card.disabled:hover{
                     border: 0.5px solid #e1e1e1;
                 }
             }
+            .info{
+                width: 60%;
+                p{
+                    font-family: 'Nunito', sans-serif;
+                    font-weight: 300;
+                    font-size: 1.3rem;
+                    text-align: center;
+                    color: #000;
+                    padding: 0 1rem;
+                }
+                h3{
+                    color: $color-inscribete;
+                    font-size: 2.2rem;
+                    font-family: 'Teko', sans-serif;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin-top: 1.5rem;
+                    margin-bottom: 0;
+                }
+            }
+            .imagen{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                width: 40%;
+                img{
+                    width: 100%;
+                    padding: 1rem 5% 5rem 5%;
+                }  
+            }
+        }
+        .sinborde{
+            border-top: none;
+            width: 100%;
+            padding: 0 2rem;
+            margin-top: 1rem;
+            .integrante{
+                margin: 0;
+                padding: 1rem;
+                img{
+                    width: 150px;
+                }
+                h3{
+                    padding-top: 0.8rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .etiquetas{
+            border: none;
+            padding: 0;
+            margin-top: 2.5rem;
+            --bs-gutter-y: 0;
+            .division{
+                padding: 1.2rem;
+                margin: 0;
+                .detalle{
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    background-color: $color-secondary;
+                    padding: 1.5rem;
+                    height: 100%;
+                    border-radius: 0.6rem;
+                    transition: all .3s ease;
+                    i{
+                        font-size: 3.2rem;
+                        margin: 0 1.5rem 0 0;
+                        color: $color-inscribete;
+                    }
+                    p{
+                        font-size: 1.15rem;
+                        text-align: left;
+                        color: #fff;
+                        margin-bottom: 0;
+                        font-weight: 400;
+                    }
+                }
+                .detalle:hover{
+                    transform:translateY(-6px);
+                }
+            }
+        }
+    }
+    .nosotros{
+        .row-cols-md-3{
+            padding: 0 10rem;
+        }
+    }
+    figure{
+        padding-top: 3rem;
+        blockquote{
             p{
-                font-weight: 500;
-                font-size: 1.4rem;
-                text-align: justify;
-                color: #000;
-                padding: 0 2rem;
+                font-size: 2.2rem;
             }
-            h3{
-                color: $color-inscribete;
-                font-size: 1.2rem;
-                font-weight: 700;
-                text-transform: uppercase;
-                margin-top: 1.5rem;
-                margin-bottom: 0;
-            }
-            img{
-                width: 100%;
-                padding: 1rem 5% 1rem 5%;
-            }     
+        }
+        .blockquote-footer{
+            font-size: 1.2rem;
         }
     }
 }
