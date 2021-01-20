@@ -71,14 +71,17 @@ main{
                     align-items: center;
                     justify-content: center;
                     display: flex;
+                    overflow: hidden;
                     
                     img{
                         height: 250px;
                         width: 250px;
                         padding: 1.5rem;
+                        transition: all 0.6s ease;
                     }
                     img.desenfoque{
                         filter: blur(7px);
+                        transition: none;
                     }
                     .card-body{
                         width: 100%;
@@ -114,6 +117,14 @@ main{
                             filter: blur(3px);
                         }
                     }
+                }
+                .card:hover img{
+                    -webkit-transform:scale(1.07);
+                    transform:scale(1.07);
+                }
+                .card:hover img.desenfoque{
+                    -webkit-transform:none;
+                    transform:none;
                 }
                 .card.disabled:hover{
                     border: 0.5px solid #e1e1e1;
@@ -158,12 +169,55 @@ main{
             .integrante{
                 margin: 0;
                 padding: 1rem;
-                img{
+                .contenedor-foto{
                     width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin: auto;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        object-fit: cover;
+                        transition: all .4s ease;
+                    }
+                    img:hover{
+                        transform: scale(1.03);
+                    }
                 }
                 h3{
                     padding-top: 0.8rem;
                     font-size: 1.2rem;
+                    text-transform: capitalize;
+                }
+                h3::selection{
+                    color: $color-inscribete;
+                    background-color: $color-secondary;
+                }
+                ul{
+                    list-style: none;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    box-sizing: border-box;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        width: 20%;
+                        font-size: 1.6rem;
+                        .btn-secondary{
+                            padding: 0;
+                            color: #0d6efd;
+                            background-color: transparent;
+                            border-color: transparent;
+                            font-size: 1.6rem;
+                        }
+                    }
                 }
             }
         }
@@ -195,6 +249,9 @@ main{
                         color: #fff;
                         margin-bottom: 0;
                         font-weight: 400;
+                    }
+                    p:hover{
+                        cursor:default;
                     }
                 }
                 .detalle:hover{

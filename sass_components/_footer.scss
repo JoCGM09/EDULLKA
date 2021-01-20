@@ -6,16 +6,20 @@ footer{
     width: 100%;
     box-shadow: 0 0 4px $color-shadow;
     .text-center{
-        background-color: $bg-color--primary;
+        background-color: #000;
         float: left;
         width: 100%;
+        color: #fff;
+        a{
+            color: #fff;
+        }
     }
     nav.redes-sociales{
         position: absolute;
         left: 3rem;
         bottom: 0.2rem;
         a{
-            color: #000;
+            color: #fff;
             font-size: 2.2rem;
             margin-right: 25px;
         }

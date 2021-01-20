@@ -9,6 +9,29 @@ body {
     background-color: #eee;
 }
 
+header{
+    .contenedor-img{
+        h1{
+            display: none;
+        }
+        h2{
+            display: none;
+        }
+        .img-1{
+            display: none;
+        }
+        .img-2{
+            display: none;
+        }
+        .img-3{
+            display: none;
+        }
+        .img-4{
+            display: none;
+        }
+    }
+}
+
 main {
     padding: 0 10%;
     span.badge {

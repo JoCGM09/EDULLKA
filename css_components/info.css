@@ -3,20 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
 body {
   background-color: #eaeaea;
   background-attachment: fixed;
   background-position: center;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%237d7d7e' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
 }
 
 nav.navbar {
   background-color: rgba(6, 8, 9, 0.75) !important;
-  height: 3.5rem;
+  height: 3.2rem;
   width: 100%;
-  padding: 2rem 6rem;
+  padding: 1.6rem 6rem;
   z-index: 1 !important;
   position: sticky;
   box-shadow: 0 0 3px #000;
@@ -32,7 +32,7 @@ nav.navbar .navbar-nav li a {
   padding: 0.5rem 2rem 0 2rem !important;
 }
 nav.navbar .navbar-nav li a h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-bottom: 0.2rem;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
@@ -83,6 +83,25 @@ body {
   font-size: 17px;
   font-weight: 400;
   background-color: #eee;
+}
+
+header .contenedor-img h1 {
+  display: none;
+}
+header .contenedor-img h2 {
+  display: none;
+}
+header .contenedor-img .img-1 {
+  display: none;
+}
+header .contenedor-img .img-2 {
+  display: none;
+}
+header .contenedor-img .img-3 {
+  display: none;
+}
+header .contenedor-img .img-4 {
+  display: none;
 }
 
 main {
@@ -363,9 +382,13 @@ footer {
   box-shadow: 0 0 4px #000;
 }
 footer .text-center {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #000;
   float: left;
   width: 100%;
+  color: #fff;
+}
+footer .text-center a {
+  color: #fff;
 }
 footer nav.redes-sociales {
   position: absolute;
@@ -373,7 +396,7 @@ footer nav.redes-sociales {
   bottom: 0.2rem;
 }
 footer nav.redes-sociales a {
-  color: #000;
+  color: #fff;
   font-size: 2.2rem;
   margin-right: 25px;
 }
