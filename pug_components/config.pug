@@ -5,7 +5,7 @@
 -var link = ['https://forms.gle/4bdZokf4Ai9NPSHE7', 'https://www.google.com']
 -var escudos = ['python','java','c']
 -var descripciones = ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.","hola","hola"]
--var integrantes = ["Jhomar Astuyauri", "Ednaly Cuadros", "José Guerra", "Pamela Villacorta", "José Ñiquen", "Jhairo Valladares", "Manuel Baella", "Persona 8"]
+-var integrantes = ["jhomar astuyauri", "ednaly cuadros", "jose guerra", "pamela villacorta", "jose ñiquen", "jhairo valladares", "manuel baella", "Persona 8"]
 
 mixin botonFrontal(texto)
     if texto == 'Inscríbete'
@@ -113,12 +113,38 @@ mixin ItemDerechaTimeline(num)
                 if block
                     block
                 else
-                    li Hola
+                    li No hay nada
 mixin TemaPorSeccion(texto)
     -var tema = texto
     li #{tema}
 mixin AgregarIntegrante(user)
     -var integrante = integrantes[user]
+    -var foto = "perfil-"+integrante
     .col.integrante
-        img(src="images/user.png")
+        div.contenedor-foto
+            img(src=`images/${foto}.jpg`)
         h3=integrante
+        ul.redes
+            if block
+                block
+            else
+                li none
+mixin AgregarRedSocial(red, link)
+    -var redtotal = "fa-"+red
+    li
+        a(
+            href=`${link}`
+            target="_blank"
+        )
+            i.fab(class=redtotal)
+mixin AgregarCorreo(id, link)
+    -var redtotal = "fa-"+id
+    li
+        button(
+            type="button"
+            class="btn btn-secondary"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            title=`${link}`
+        )
+            i.far(class=redtotal)
