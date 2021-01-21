@@ -350,15 +350,15 @@ main .container-fluid .sinborde .integrante .contenedor-foto {
   justify-content: center;
   display: flex;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
 }
 main .container-fluid .sinborde .integrante .contenedor-foto img {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  transition: all 0.4s ease;
 }
-main .container-fluid .sinborde .integrante .contenedor-foto img:hover {
-  transform: scale(1.03);
+main .container-fluid .sinborde .integrante .contenedor-foto:hover {
+  transform: scale(1.04);
 }
 main .container-fluid .sinborde .integrante h3 {
   padding-top: 0.8rem;
