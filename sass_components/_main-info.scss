@@ -11,6 +11,9 @@ body {
 
 header{
     .contenedor-img{
+        .logo{
+            display: none;
+        }
         h1{
             display: none;
         }
@@ -32,8 +35,17 @@ header{
     }
 }
 
+nav.navbar{
+    background-color: #000 !important;
+    z-index: 100 !important;
+    height: 2.4rem;
+    padding: 1.4rem 6rem;
+    box-shadow: 0 0 4px $color-shadow;
+}
+
 main {
-    padding: 0 10%;
+    padding: 0 12%;
+    margin-top: 2rem;
     span.badge {
         margin-bottom: 1.5rem;
         margin-top: 1.5rem;
@@ -112,6 +124,13 @@ main {
             text-transform: uppercase;
             letter-spacing: 3px;
             font-weight: 400;
+        }
+
+        img{
+            width: 600px;
+            padding: 0;
+            margin: auto;
+            float: left;
         }
         
         h3{

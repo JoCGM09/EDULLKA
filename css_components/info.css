@@ -13,13 +13,13 @@ body {
 }
 
 nav.navbar {
-  background-color: rgba(6, 8, 9, 0.75) !important;
-  height: 3.2rem;
+  background-color: transparent !important;
+  height: 3rem;
   width: 100%;
-  padding: 1.6rem 6rem;
+  padding: 2.1rem 6rem;
   z-index: 1 !important;
-  position: sticky;
-  box-shadow: 0 0 3px #000;
+  position: fixed;
+  transition: all 0.3s ease;
 }
 nav.navbar .navbar-nav {
   width: 100%;
@@ -40,6 +40,14 @@ nav.navbar .navbar-nav li a h3 {
 }
 nav.navbar .navbar-nav li a h3:hover {
   border-bottom: 1.5px solid #fff;
+}
+
+nav.active {
+  background-color: #000 !important;
+  z-index: 100 !important;
+  height: 2.4rem;
+  padding: 1.4rem 6rem;
+  box-shadow: 0 0 4px #000;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -85,6 +93,9 @@ body {
   background-color: #eee;
 }
 
+header .contenedor-img .logo {
+  display: none;
+}
 header .contenedor-img h1 {
   display: none;
 }
@@ -104,8 +115,17 @@ header .contenedor-img .img-4 {
   display: none;
 }
 
+nav.navbar {
+  background-color: #000 !important;
+  z-index: 100 !important;
+  height: 2.4rem;
+  padding: 1.4rem 6rem;
+  box-shadow: 0 0 4px #000;
+}
+
 main {
-  padding: 0 10%;
+  padding: 0 12%;
+  margin-top: 2rem;
 }
 main span.badge {
   margin-bottom: 1.5rem;
@@ -184,6 +204,12 @@ main .row h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 400;
+}
+main .row img {
+  width: 600px;
+  padding: 0;
+  margin: auto;
+  float: left;
 }
 main .row h3 {
   width: 100%;
