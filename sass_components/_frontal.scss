@@ -2,12 +2,13 @@ header{
     height: 100vh;
     width: 100%;
     position: relative;
-    background-image: linear-gradient(120deg, get-opacity($color-shadow, .5) 0%, get-opacity($color-shadow, .5) 100%),url(../images/header2.jpg);
+    background-image: linear-gradient(180deg, get-opacity($color-shadow, .9) 0%, get-opacity($color-shadow, .65) 50%, get-opacity($color-shadow, .2) 100%),url(../images/header2.jpg);
     @include frontal-bg-config;
     padding-top: 0.1px;
 
     .head{
         margin: 0 auto;
+        margin-top: 4rem;
         padding:  4rem;
         position: relative;
         display: flex;
@@ -33,33 +34,31 @@ header{
         .contenedor-img{
             width: 100%;
             height: 100%;
+            .logo{
+                width: 100%;
+                padding: 0 28%;
+                position: relative;
+                -webkit-animation: none;
+                animation: none;
+                margin-top: 5rem;
+                margin-bottom: 2rem;
+                filter: saturate(200%);
+            }
             img{
                 width: 180px;
                 -webkit-animation: floating 8s ease-in-out infinite;
                 animation: floating 8s ease-in-out infinite;
                 will-change: transform;
                 position: absolute;
-            }
-            h1{
-                font-family: 'Merienda', cursive;
-                text-align: center;
-                font-size: 10rem;
-                margin-top: 6rem;
-                margin-bottom: 15px;
-                font-weight: 700;
-                padding-bottom: 0;
-                text-shadow: 0 0 12px $color-shadow;
-                color: $color-secondary;
-            }
-            h1:hover{
-                cursor: default;
+                filter: saturate(150%);
             }
             h2{
                 text-align: center;
                 text-transform: uppercase;
                 font-family: 'Fjalla One', sans-serif;
                 color: $color-inscribete;
-                text-shadow: 0 0 5px $color-shadow;
+                filter: saturate(200%);
+                //text-shadow: 0 0 5px $color-shadow;
             }
             h2:hover{
                 cursor: default;

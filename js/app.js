@@ -1,58 +1,9 @@
-$(function () {
-
-    window.sr = ScrollReveal();
-
-    if ($(window).width() < 768) {
-
-        if ($('.timeline-content').hasClass('js--fadeInLeft')) {
-            $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
-        }
-
-        sr.reveal('.js--fadeInRight', {
-            origin: 'right',
-            distance: '300px',
-            easing: 'ease-in-out',
-            duration: 800,
-        });
-
-    } else {
-
-        sr.reveal('.js--fadeInLeft', {
-            origin: 'left',
-            distance: '300px',
-            easing: 'ease-in-out',
-            duration: 800,
-        });
-
-        sr.reveal('.js--fadeInRight', {
-            origin: 'right',
-            distance: '300px',
-            easing: 'ease-in-out',
-            duration: 800,
-        });
-
+window.addEventListener('scroll', ()=>{
+    const scrolled = window.scrollY;
+    var navbar = document.getElementById("navbar");
+    if (scrolled >= 100) { // this refers to window
+        navbar.classList.add("active");
+    }else{
+        navbar.classList.remove("active");
     }
-
-    sr.reveal('.js--fadeInLeft', {
-        origin: 'left',
-        distance: '300px',
-        easing: 'ease-in-out',
-        duration: 800,
-    });
-
-    sr.reveal('.js--fadeInRight', {
-        origin: 'right',
-        distance: '300px',
-        easing: 'ease-in-out',
-        duration: 800,
-    });
-
-
 });
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})

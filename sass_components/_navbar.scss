@@ -1,11 +1,11 @@
 nav.navbar{
-    background-color: $color-navbar !important;
-    height: 3.2rem;
+    background-color: transparent !important;
+    height: 3rem;
     width: 100%;
-    padding: 1.6rem 6rem;
+    padding: 2.1rem 6rem;
     z-index: 1 !important;
-    position: sticky;
-    box-shadow: 0 0 3px $color-shadow;
+    position: fixed;
+    transition: all .3s ease;
     .navbar-nav{
         width: 100%;
         text-align: center;
@@ -28,6 +28,13 @@ nav.navbar{
             }
         }  
     }      
+}
+nav.active{
+    background-color: #000 !important;
+    z-index: 100 !important;
+    height: 2.4rem;
+    padding: 1.4rem 6rem;
+    box-shadow: 0 0 4px $color-shadow;
 }
 .navbar-dark{
     .navbar-nav{
