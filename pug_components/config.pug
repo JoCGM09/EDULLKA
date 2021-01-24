@@ -76,11 +76,12 @@ mixin CampamentoInactivo(tema)
             .card-footer
                 small.text-muted #{fechaInicio[0]}
 mixin EscudoInformacion(numero)
-    img.rounded.mx-auto.d-block(src=`images/${escudos[numero]}.png`)
+    div.contenedor-escudo
+        img.rounded.mx-auto.d-block(src=`images/${escudos[numero]}.png`)
 mixin InformacionCampamento(numero)
     -var titulo = escudos[numero]
     -var descripcion = descripciones[numero]
-    h2 Campamento de #{titulo}
+    h2.name-camp Campamento de #{titulo}
     ul
         li 10 días
         li +30 horas
@@ -148,3 +149,6 @@ mixin AgregarCorreo(id, link)
             title=`${link}`
         )
             i.far(class=redtotal)
+mixin ConoceMas(numero)
+    -var titulo = escudos[numero]
+    h3 Conoce más sobre #{titulo}
