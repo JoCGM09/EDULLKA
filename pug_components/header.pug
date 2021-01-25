@@ -25,12 +25,30 @@ header
                         a.nav-link(href="landing.html#nosotros")
                             h3 Nosotros
     div.contenedor.head
-        div.contenedor-img
-            img.logo(src="images/logo-edullka-header.png", alt="logo")
-            h2 Campamento virtual
-            img.float.img-1(src="images/laptop.svg", alt="")
-            img.float.img-2(src="images/cup.png", alt="")
-            img.float.img-3(src="images/focus.png", alt="")
-            img.float.img-4(src="images/chat.png", alt="")
-            a(href="#")
-                i.fab.fa-whatsapp
+        h1 Descubre una nueva metodología de aprendizaje
+        .animacion
+            h2 Te ofrecemos un descuento de 
+                span.typed
+        button.wsp-button(type="button")
+            i.fab.fa-whatsapp
+        .contenedor-chat
+            .contenido-chat
+                .top
+                    .close-button
+                        i.fas.fa-times
+                    img(src="images/carpa.png")
+                    .estado-chat
+                        strong Edullka
+                        span En línea
+                .bottom
+                    textarea(id="mensaje" cols="30" rows="1" placeholder="Escribe un mensaje aquí")
+                    .send-button(id="send-button")
+                        img(src="images/send.svg" alt="")
+
+        //- div.contenedor-img
+            //- img.logo(src="images/logo-edullka-header.png", alt="logo")
+            //- h2 Campamento virtual
+            //- img.float.img-1(src="images/laptop.svg", alt="")
+            //- img.float.img-2(src="images/cup.png", alt="")
+            //- img.float.img-3(src="images/focus.png", alt="")
+            //- img.float.img-4(src="images/chat.png", alt="")

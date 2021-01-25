@@ -6,32 +6,151 @@ header{
     @include frontal-bg-config;
     padding-top: 0.1px;
 
-    .head{
-        margin: 0 auto;
-        margin-top: 4rem;
-        padding:  4rem;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: $color-font;
-
-        .col-md-7{
-            text-align: left;
-        }    
-    }
-    h1{
-        font-size: 4.5rem;
-        margin-bottom: 15px;
-        font-weight: 700;
-        padding-bottom: 1.5rem;
-    }
     .contenedor{
         position: relative;
         height: 100%;
         padding: 0;
-        .contenedor-img{
+        margin: 0 auto;
+        padding:  4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1{
+            font-size: 4rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: $color-font;
+            text-align: center;
+            margin: 0;
+        }
+
+        .animacion{
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            h2{
+                font-size: 31px;
+                color: #fff;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                .typed{
+                    .descuento{
+                        font-weight: 500;
+                        font-style: normal;
+                        color: $color-inscribete;
+                    }
+                }
+            }
+        }
+
+        .contenedor-chat{
+            background-color: #fff;
+            width: 350px;
+            height: 300px;
+            position: fixed;
+            bottom: 110px;
+            right: 40px;
+            z-index: 100;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+            transition: transform .3s ease-in-out;
+            transform: translate(115%);
+            .contenido-chat{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                background-image: url(../images/wsp-wallpaper.jpg);
+                background-size: 400px;
+                background-color: #eaeaea;
+                .top{
+                    background-color: #eaeaea;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    z-index: 1;
+                    .close-button{
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                        cursor: pointer;
+                        i{
+                            color: #000;
+                            font-size: 1.4rem;
+                        }
+                    }
+                    img{
+                        width: 45px;
+                        height: 40px;
+                        border: solid 1px #f1f1f1;
+                        padding: 5px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        background-color: #fff;
+                    }
+                    .estado-chat{
+                        display: flex;
+                        flex-direction: column;
+                        strong{
+                            display: block;
+                            line-height: 15px;
+                            margin-bottom: 5px;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 400;
+                        }
+                        span{
+                            font-size: 14px;
+                            line-height: 12px;
+                            font-family: 'Raleway', sans-serif;
+                        }
+                    }
+                }
+                .bottom{
+                    background-color: #eaeaea;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    z-index: 1;
+                    textarea{
+                        appearance: none;
+                        outline: none;
+                        resize: none;
+                        background-color: #fff;
+                        border-color: #fff;
+                        border-radius: 20px;
+                        line-height: 10px;
+                        border-style: solid;
+                        border-width: 1px;
+                        padding: 12px;
+                        width: calc(100% - 35px);
+                        box-shadow: none;
+                    }
+                    textarea::placeholder{
+                        font-size: 18px;
+                    }
+                    .send-button{
+                        cursor: pointer;
+                        img{
+                            width: 26px;
+                            margin-left: 10px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .active{
+            transform: translate(0);
+        }
+        /*.contenedor-img{
             width: 100%;
             height: 100%;
             .logo{
@@ -81,7 +200,7 @@ header{
                 left: 65%;
                 top: 380px;
             }
-        }
+        }*/
     }        
 }
 @-webkit-keyframes floating {
