@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap");
 body {
   background-color: #eaeaea;
   background-attachment: fixed;
@@ -22,78 +24,198 @@ header {
   background-position: center;
   padding-top: 0.1px;
 }
-header .head {
-  margin: 0 auto;
-  margin-top: 4rem;
-  padding: 4rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #fff;
-}
-header .head .col-md-7 {
-  text-align: left;
-}
-header h1 {
-  font-size: 4.5rem;
-  margin-bottom: 15px;
-  font-weight: 700;
-  padding-bottom: 1.5rem;
-}
 header .contenedor {
   position: relative;
   height: 100%;
   padding: 0;
+  margin: 0 auto;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*.contenedor-img{
+      width: 100%;
+      height: 100%;
+      .logo{
+          width: 100%;
+          padding: 0 28%;
+          position: relative;
+          -webkit-animation: none;
+          animation: none;
+          margin-top: 8rem;
+          margin-bottom: 2rem;
+          filter: saturate(200%);
+      }
+      img{
+          width: 180px;
+          -webkit-animation: floating 8s ease-in-out infinite;
+          animation: floating 8s ease-in-out infinite;
+          will-change: transform;
+          position: absolute;
+          filter: saturate(150%);
+      }
+      h2{
+          text-align: center;
+          text-transform: uppercase;
+          font-family: 'Fjalla One', sans-serif;
+          color: $color-inscribete;
+          filter: saturate(200%);
+          //text-shadow: 0 0 5px $color-shadow;
+      }
+      h2:hover{
+          cursor: default;
+      }
+      .img-1{
+          left: 7%;
+          top: 60px;
+      }
+      .img-2{
+          left: 77%;
+          top: 50px;
+      }
+      .img-3{
+          width: 260px;
+          height: 180px;
+          left: 15%;
+          top: 380px;
+      }
+      .img-4{
+          left: 65%;
+          top: 380px;
+      }
+  }*/
 }
-header .contenedor .contenedor-img {
+header .contenedor h1 {
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+header .contenedor .animacion {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+header .contenedor .animacion h2 {
+  font-size: 31px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+header .contenedor .animacion h2 .typed .descuento {
+  font-weight: 500;
+  font-style: normal;
+  color: #FF8C03;
+}
+header .contenedor .contenedor-chat {
+  background-color: #fff;
+  width: 350px;
+  height: 300px;
+  position: fixed;
+  bottom: 110px;
+  right: 40px;
+  z-index: 100;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  transform: translate(115%);
+}
+header .contenedor .contenedor-chat .contenido-chat {
   width: 100%;
   height: 100%;
-}
-header .contenedor .contenedor-img .logo {
-  width: 100%;
-  padding: 0 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
-  animation: none;
-  margin-top: 8rem;
-  margin-bottom: 2rem;
-  filter: saturate(200%);
+  background-image: url(../images/wsp-wallpaper.jpg);
+  background-size: 400px;
+  background-color: #eaeaea;
 }
-header .contenedor .contenedor-img img {
-  width: 180px;
-  animation: floating 8s ease-in-out infinite;
-  will-change: transform;
+header .contenedor .contenedor-chat .contenido-chat .top {
+  background-color: #eaeaea;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+}
+header .contenedor .contenedor-chat .contenido-chat .top .close-button {
   position: absolute;
-  filter: saturate(150%);
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
-header .contenedor .contenedor-img h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Fjalla One", sans-serif;
-  color: #FF8C03;
-  filter: saturate(200%);
+header .contenedor .contenedor-chat .contenido-chat .top .close-button i {
+  color: #000;
+  font-size: 1.4rem;
 }
-header .contenedor .contenedor-img h2:hover {
-  cursor: default;
+header .contenedor .contenedor-chat .contenido-chat .top img {
+  width: 45px;
+  height: 40px;
+  border: solid 1px #f1f1f1;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #fff;
 }
-header .contenedor .contenedor-img .img-1 {
-  left: 7%;
-  top: 60px;
+header .contenedor .contenedor-chat .contenido-chat .top .estado-chat {
+  display: flex;
+  flex-direction: column;
 }
-header .contenedor .contenedor-img .img-2 {
-  left: 77%;
-  top: 50px;
+header .contenedor .contenedor-chat .contenido-chat .top .estado-chat strong {
+  display: block;
+  line-height: 15px;
+  margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
-header .contenedor .contenedor-img .img-3 {
-  width: 260px;
-  height: 180px;
-  left: 15%;
-  top: 380px;
+header .contenedor .contenedor-chat .contenido-chat .top .estado-chat span {
+  font-size: 14px;
+  line-height: 12px;
+  font-family: "Raleway", sans-serif;
 }
-header .contenedor .contenedor-img .img-4 {
-  left: 65%;
-  top: 380px;
+header .contenedor .contenedor-chat .contenido-chat .bottom {
+  background-color: #eaeaea;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+}
+header .contenedor .contenedor-chat .contenido-chat .bottom textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  resize: none;
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 20px;
+  line-height: 10px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 12px;
+  width: calc(100% - 35px);
+  box-shadow: none;
+}
+header .contenedor .contenedor-chat .contenido-chat .bottom textarea::placeholder {
+  font-size: 18px;
+}
+header .contenedor .contenedor-chat .contenido-chat .bottom .send-button {
+  cursor: pointer;
+}
+header .contenedor .contenedor-chat .contenido-chat .bottom .send-button img {
+  width: 26px;
+  margin-left: 10px;
+  display: block;
+}
+header .contenedor .active {
+  transform: translate(0);
 }
 @keyframes floating {
   0% {
@@ -157,7 +279,12 @@ nav.active {
   color: #fff;
 }
 
-.contenedor a i {
+.contenedor button {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2.5rem;
+}
+.contenedor button i {
   background-color: rgba(77, 194, 71, 0.95);
   border-radius: 50%;
   padding: 0.6rem 0.8rem 0.7rem 0.9rem;
@@ -172,7 +299,7 @@ nav.active {
   box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 6px;
   transition: all 0.3s ease;
 }
-.contenedor a i:hover {
+.contenedor button i:hover {
   transform: scale(1.1);
 }
 

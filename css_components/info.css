@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap");
 body {
   background-color: #eaeaea;
   background-attachment: fixed;
@@ -63,7 +65,12 @@ nav.active {
   color: #fff;
 }
 
-.contenedor a i {
+.contenedor button {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2.5rem;
+}
+.contenedor button i {
   background-color: rgba(77, 194, 71, 0.95);
   border-radius: 50%;
   padding: 0.6rem 0.8rem 0.7rem 0.9rem;
@@ -78,7 +85,7 @@ nav.active {
   box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 6px;
   transition: all 0.3s ease;
 }
-.contenedor a i:hover {
+.contenedor button i:hover {
   transform: scale(1.1);
 }
 
