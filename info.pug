@@ -1,6 +1,8 @@
 extend pug_components/template.pug
 block css
     link(rel="stylesheet", href="css_components/info.css")
+block script
+    script(src="js/app.js" type="text/javascript")
 block contenidos
     main#main 
         include pug_components/modules.pug

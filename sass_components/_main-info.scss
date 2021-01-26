@@ -10,26 +10,15 @@ body {
 }
 
 header{
-    .contenedor-img{
-        .logo{
-            display: none;
-        }
+    height: 2.6rem;
+    .contenedor{
         h1{
             display: none;
         }
-        h2{
+        .animacion{
             display: none;
         }
-        .img-1{
-            display: none;
-        }
-        .img-2{
-            display: none;
-        }
-        .img-3{
-            display: none;
-        }
-        .img-4{
+        .cuenta{
             display: none;
         }
     }
@@ -45,7 +34,7 @@ nav.navbar{
 
 main {
     padding: 0 12%;
-    margin-top: 2rem;
+    margin-top: 0;
     span.badge {
         margin-bottom: 1.5rem;
         margin-top: 1.5rem;
@@ -104,11 +93,11 @@ main {
                     list-style: none;
                     padding-left: 0;
                     li{
-                        font-family: 'PT Sans', sans-serif;
                         font-size: 1.4rem;
                         margin-bottom: 12px;
                         color: $primary-text;
                         line-height: 26px;
+                        font-weight: 300;
                     }
                     li::before{
                         font-family: 'Fontawesome';
@@ -162,6 +151,7 @@ main {
                     p{
                         margin-right: 3rem;
                         font-size: 1.3rem;
+                        font-weight: 300;
                     }
                 }
             }
@@ -191,6 +181,7 @@ main {
                         margin-left: 3rem;
                         font-size: 1.3rem;
                         text-align: right;
+                        font-weight: 300;
                     }
                 }
             }

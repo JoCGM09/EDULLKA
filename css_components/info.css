@@ -10,7 +10,7 @@ body {
   background-color: #eaeaea;
   background-attachment: fixed;
   background-position: center;
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
 }
 
@@ -18,16 +18,22 @@ nav.navbar {
   background-color: transparent !important;
   height: 3rem;
   width: 100%;
-  padding: 2.1rem 6rem;
+  padding: 2.6rem 6rem;
   z-index: 1 !important;
   position: fixed;
   transition: all 0.3s ease;
+}
+nav.navbar .navbar-brand {
+  padding: 0;
+}
+nav.navbar .navbar-brand img {
+  width: 180px;
 }
 nav.navbar .navbar-nav {
   width: 100%;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   display: flex;
 }
 nav.navbar .navbar-nav li a {
@@ -39,17 +45,26 @@ nav.navbar .navbar-nav li a h3 {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 nav.navbar .navbar-nav li a h3:hover {
-  border-bottom: 1.5px solid #fff;
+  color: #FF8C03;
 }
 
 nav.active {
-  background-color: #000 !important;
+  background-color: #fff !important;
   z-index: 100 !important;
-  height: 2.4rem;
+  height: 3.4rem;
   padding: 1.4rem 6rem;
   box-shadow: 0 0 4px #000;
+  filter: saturate(150%);
+}
+nav.active img {
+  width: 140px !important;
+}
+nav.active li a h3 {
+  color: #000 !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -65,10 +80,23 @@ nav.active {
   color: #fff;
 }
 
+.contenedor {
+  position: relative;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .contenedor button {
   position: absolute;
   bottom: 2.5rem;
   right: 2.5rem;
+  position: fixed;
+  z-index: 499;
 }
 .contenedor button i {
   background-color: rgba(77, 194, 71, 0.95);
@@ -88,6 +116,161 @@ nav.active {
 .contenedor button i:hover {
   transform: scale(1.1);
 }
+.contenedor .animacion {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.contenedor .animacion span {
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  line-height: 80px;
+}
+.contenedor .animacion span i {
+  font-style: normal;
+  color: #FF8C03;
+}
+.contenedor h2 {
+  font-size: 31px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.contenedor .cuenta {
+  width: 100%;
+}
+.contenedor .cuenta #cuenta {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.contenedor .cuenta #cuenta p {
+  margin: 0;
+}
+.contenedor .cuenta #cuenta .simply-days-section {
+  margin-left: 0.6rem !important;
+}
+.contenedor .cuenta #cuenta .simply-section {
+  margin: 0 0.3rem;
+  color: #FF8C03;
+}
+.contenedor .contenedor-chat {
+  background-color: #fff;
+  width: 350px;
+  height: 300px;
+  position: fixed;
+  bottom: 110px;
+  right: 40px;
+  z-index: 100;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  transform: translate(115%);
+}
+.contenedor .contenedor-chat .contenido-chat {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-image: url(../images/wsp-wallpaper.jpg);
+  background-size: 400px;
+  background-color: #bbbbbb;
+}
+.contenedor .contenedor-chat .contenido-chat .top {
+  background-color: #bbbbbb;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+}
+.contenedor .contenedor-chat .contenido-chat .top .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.contenedor .contenedor-chat .contenido-chat .top .close-button i {
+  color: #000;
+  font-size: 1.4rem;
+}
+.contenedor .contenedor-chat .contenido-chat .top img {
+  width: 45px;
+  height: 40px;
+  border: solid 1px #f1f1f1;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #fff;
+}
+.contenedor .contenedor-chat .contenido-chat .top .estado-chat {
+  display: flex;
+  flex-direction: column;
+}
+.contenedor .contenedor-chat .contenido-chat .top .estado-chat strong {
+  display: block;
+  line-height: 15px;
+  margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.contenedor .contenedor-chat .contenido-chat .top .estado-chat span {
+  font-size: 14px;
+  line-height: 12px;
+  font-family: "Raleway", sans-serif;
+}
+.contenedor .contenedor-chat .contenido-chat .bottom {
+  background-color: #bbbbbb;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+}
+.contenedor .contenedor-chat .contenido-chat .bottom textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  resize: none;
+  background-color: #fff;
+  border-color: #fff;
+  border-radius: 20px;
+  line-height: 20px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  width: calc(100% - 35px);
+  box-shadow: none;
+  height: 45px;
+}
+.contenedor .contenedor-chat .contenido-chat .bottom textarea::placeholder {
+  font-size: 16px;
+}
+.contenedor .contenedor-chat .contenido-chat .bottom .send-button {
+  cursor: pointer;
+}
+.contenedor .contenedor-chat .contenido-chat .bottom .send-button img {
+  width: 26px;
+  margin-left: 10px;
+  display: block;
+}
+.contenedor .active {
+  transform: translate(0);
+}
 
 html,
 body {
@@ -100,25 +283,16 @@ body {
   background-color: #eee;
 }
 
-header .contenedor-img .logo {
+header {
+  height: 2.6rem;
+}
+header .contenedor h1 {
   display: none;
 }
-header .contenedor-img h1 {
+header .contenedor .animacion {
   display: none;
 }
-header .contenedor-img h2 {
-  display: none;
-}
-header .contenedor-img .img-1 {
-  display: none;
-}
-header .contenedor-img .img-2 {
-  display: none;
-}
-header .contenedor-img .img-3 {
-  display: none;
-}
-header .contenedor-img .img-4 {
+header .contenedor .cuenta {
   display: none;
 }
 
@@ -132,7 +306,7 @@ nav.navbar {
 
 main {
   padding: 0 12%;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 main span.badge {
   margin-bottom: 1.5rem;
@@ -194,11 +368,11 @@ main .row .informacion .texto ul {
   padding-left: 0;
 }
 main .row .informacion .texto ul li {
-  font-family: "PT Sans", sans-serif;
   font-size: 1.4rem;
   margin-bottom: 12px;
   color: #212121;
   line-height: 26px;
+  font-weight: 300;
 }
 main .row .informacion .texto ul li::before {
   font-family: "Fontawesome";
@@ -250,6 +424,7 @@ main .row .contenedor-lenguaje .section-left .contenedor-descripcion {
 main .row .contenedor-lenguaje .section-left .contenedor-descripcion p {
   margin-right: 3rem;
   font-size: 1.3rem;
+  font-weight: 300;
 }
 main .row .contenedor-lenguaje .section-right {
   width: 100%;
@@ -279,6 +454,7 @@ main .row .contenedor-lenguaje .section-right .contenedor-descripcion p {
   margin-left: 3rem;
   font-size: 1.3rem;
   text-align: right;
+  font-weight: 300;
 }
 main .row h3 {
   width: 100%;
@@ -475,12 +651,14 @@ footer {
   display: inline-flex;
   width: 100%;
   box-shadow: 0 0 4px #000;
+  filter: saturate(150%);
 }
 footer .text-center {
-  background-color: #000;
+  background-color: #1e415c;
   float: left;
   width: 100%;
   color: #fff;
+  font-weight: 300;
 }
 footer .text-center a {
   color: #fff;
@@ -488,11 +666,11 @@ footer .text-center a {
 footer nav.redes-sociales {
   position: absolute;
   left: 3rem;
-  bottom: 0.2rem;
+  bottom: 0.4rem;
 }
 footer nav.redes-sociales a {
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-right: 25px;
 }
 

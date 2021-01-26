@@ -1,6 +1,8 @@
 header
     nav.navbar.navbar-expand-lg.navbar-dark.bg-dark(id="navbar")
-        .container-fluid    
+        .container-fluid  
+            a.navbar-brand(href="#")
+                img(src="images/logo-edullka-header.png" alt="")  
             button.navbar-toggler(
                 type="button"
                 data-bs-toggle="collapse"
@@ -14,7 +16,7 @@ header
                 ul.navbar-nav
                     li.nav-item
                         a.nav-link(
-                            href="landing.html"
+                            href="landing.html#"
                             aria-current="page"
                         )
                             h3 Inicio
@@ -24,11 +26,13 @@ header
                     li.nav-item
                         a.nav-link(href="landing.html#nosotros")
                             h3 Nosotros
-    div.contenedor.head
-        h1 Descubre una nueva metodología de aprendizaje
+    .contenedor.head
         .animacion
-            h2 Te ofrecemos un descuento de 
-                span.typed
+            span.typed
+        h2 Aprovecha esta oferta por tiempo limitado: <i class="descuento">50% de descuento</i>
+        .cuenta
+            #cuenta
+                p.termina Termina en
         button.wsp-button(type="button")
             i.fab.fa-whatsapp
         .contenedor-chat
@@ -44,11 +48,3 @@ header
                     textarea(id="mensaje" cols="30" rows="1" placeholder="Escribe un mensaje aquí")
                     .send-button(id="send-button")
                         img(src="images/send.svg" alt="")
-
-        //- div.contenedor-img
-            //- img.logo(src="images/logo-edullka-header.png", alt="logo")
-            //- h2 Campamento virtual
-            //- img.float.img-1(src="images/laptop.svg", alt="")
-            //- img.float.img-2(src="images/cup.png", alt="")
-            //- img.float.img-3(src="images/focus.png", alt="")
-            //- img.float.img-4(src="images/chat.png", alt="")
