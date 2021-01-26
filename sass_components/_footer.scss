@@ -5,11 +5,13 @@ footer{
     display: inline-flex;
     width: 100%;
     box-shadow: 0 0 4px $color-shadow;
+    filter: saturate(150%);
     .text-center{
-        background-color: #000;
+        background-color: $color-secondary--hover;
         float: left;
         width: 100%;
         color: #fff;
+        font-weight: 300;
         a{
             color: #fff;
         }
@@ -17,10 +19,10 @@ footer{
     nav.redes-sociales{
         position: absolute;
         left: 3rem;
-        bottom: 0.2rem;
+        bottom: 0.4rem;
         a{
             color: #fff;
-            font-size: 2.2rem;
+            font-size: 2rem;
             margin-right: 25px;
         }
     }

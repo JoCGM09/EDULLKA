@@ -43,19 +43,83 @@
             h3{
                 font-size: 1.8rem;
             }
+        }
+        .dynamic{
             .col{
+                .detalle{
+                    p{
+                        padding: 0;
+                        font-size: 1.05rem !important;
+                    }
+                }
+            }
+        }
+        .camp{
+            .col{
+                padding: 0 0.8rem !important;
                 .card{
                     img{
                         height: 220px;
                         width: 220px;
                     }
+                    .card-body{
+                        a.btn{
+                            p{
+                                padding: 0;
+                            }
+                        }
+                    }
                 }
+            }
+        }
+        .nosotros{
+            .nuestro-equipo{
+                margin: 1.5rem 2rem 0 2rem;
+            }
+            .row-cols-md-2{
+                padding: 0.8rem 3rem 0 2rem;
+                .imagen{
+                    img{
+                        padding: 0.5rem 0 5rem 0;
+                    }
+                }
+                .info{
+                    p{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+            .row-cols-md-3{
+                padding: 0 10rem;
+            }
+        }
+        figure{
+            padding-top: 2rem;
+            blockquote{
+                p{
+                    font-size: 2rem;
+                }
+            }
+            .blockquote-footer{
+                font-size: 1.1rem;
             }
         }
     }
 }
 
 @media only screen and (max-width: 768px) {
+    header{
+        .head{
+            h1{
+                font-size: 3.5rem;
+            }
+            .animacion{
+                h2{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
     main {
         span.badge {
             font-size: 2.2rem;
@@ -76,11 +140,108 @@
                 }
             }
         }
+        .dynamic{
+            padding: 0 3rem;
+            .col{
+                padding: 1rem !important;
+                .detalle{
+                    i{
+                        font-size: 2.8rem !important;
+                    }
+                    p{
+                        padding: 0;
+                        font-size: 0.85rem !important;
+                    }
+                }
+            }
+        }
+        .camp{
+            .row{
+                .col{
+                    padding: 0 0.6rem !important;
+                    .card{
+                        img{
+                            width: 200px;
+                            height: 200px;
+                            padding: 1.2rem;
+                        }
+                        .card-body{
+                            h2{
+                                font-size: 2.5rem;
+                            }
+                            a.btn{
+                                i{
+                                    font-size: 0.8rem;
+                                }
+                                p{
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                        .card-footer{
+                            small{
+                                font-size: 0.75rem !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .nosotros{
+            .row{
+                .imagen{
+                    width: 100%;
+                    img{
+                        padding: 0.5rem 6rem 1rem 6rem;
+                    }
+                }
+                .info{
+                    width: 100%;
+                }
+                .integrante{
+                    .contenedor-foto{
+                        width: 120px;
+                        height: 120px;
+                        img{
+                            width: 120px;
+                            height: 120px;
+                        };
+                    }
+                    h3{
+                        font-size: 1rem;
+                    }
+                    .redes{
+                        li{
+                            margin: 0 0.4rem;
+                            font-size: 1.4rem;
+                            .btn-secondary{
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .row-cols-md-3{
+                padding: 0 5.5rem;
+            }
+        }
+        figure{
+            padding-top: 1rem;
+            blockquote{
+                p{
+                    font-size: 1.8rem;
+                }
+            }
+            .blockquote-footer{
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+        }
     }
 
     footer {
         display: block;
-        background-color: rgba(225, 225, 225, 0.8);
+        background-color: #000;
 
         nav.redes-sociales {
             position: relative;
@@ -90,47 +251,138 @@
             background-color: transparent !important;
 
             a {
-                font-size: 3rem;
+                font-size: 2.3rem;
                 padding: 0 1.5rem;
                 margin-right: 0;
             }
         }
 
         .text-center {
-            font-size: 1.6rem;
-            background-color: rgba(225, 225, 225, 0.8);
+            font-size: 1.3rem;
+            background-color: #000;
         }
     }
 }
 
 @media only screen and (max-width: 480px) {
+    header{
+        nav.navbar {
+            background-color:#000 !important;
+        }
+    }
+    header{
+        .head{
+            padding-left: 2rem;
+            padding-right: 2rem;
+            h1{
+                font-size: 3rem;
+            }
+            .animacion{
+                h2{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
     main {
         span.badge {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             margin-bottom: 1rem;
         }
-        .container-fluid{
+        .dynamic{
+            padding: 0 2.5rem;
             .col{
-                .card{
-                    img{
-                        height: 240px;
-                        width: 240px;
+                padding: 1rem !important;
+                .detalle{
+                    i{
+                        font-size: 2.8rem !important;
                     }
-                    .card-body{
-                        h2{
-                            font-size: 2rem;
+                    p{
+                        padding: 0;
+                        font-size: 1rem !important;
+                    }
+                }
+            }
+        }
+        .camp{
+            .row{
+                .col{
+                    padding: 0 2.5rem !important;
+                    .card{
+                        img{
+                            width: 270px;
+                            height: 270px;
+                            padding: 1.5rem;
+                        }
+                        .card-body{
+                            h2{
+                                font-size: 3rem;
+                            }
+                            a.btn{
+                                i{
+                                    font-size: 1rem;
+                                }
+                                p{
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                        .card-footer{
+                            small{
+                                font-size: 1rem !important;
+                            }
                         }
                     }
                 }
             }
+        }
+        .nosotros{
+            .nuestro-equipo{
+                font-size: 1.9rem;
+                border-left-width: 5px;
+                padding-left: 0.5rem;
+                margin: 1.5rem 1rem 0 1rem;
+            }
             .row{
-                img{
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
+                .imagen{
+                    img{
+                        padding: 0.5rem 2rem 1rem 2rem;
+                    }
                 }
-                p{
-                    padding: 0 1rem;
+                .info{
+                    p{
+                        font-size: 1rem;
+                    }
+                    h3{
+                        font-size: 1.8rem;
+                    }
                 }
+                .integrante{
+                    margin-bottom: 1rem;
+                    .contenedor-foto{
+                        width: 170px;
+                        height: 170px;
+                        img{
+                            width: 170px;
+                            height: 170px;
+                        };
+                    }
+                    h3{
+                        font-size: 1.8rem;
+                    }
+                    .redes{
+                        li{
+                            margin: 0;
+                            font-size: 2rem;
+                            .btn-secondary{
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .row-cols-md-3{
+                padding: 0 2.5rem;
             }
         }
     }
@@ -138,13 +390,14 @@
     footer {
         nav.redes-sociales {
             a {
-                padding: 0 1rem;
-                margin-right: 0;
+                font-size: 2.5rem;
+                padding: 0 1.4rem;
             }
+            padding-bottom: 1rem;
         }
 
         .text-center {
-            font-size: 1.2rem;
+            font-size: 1rem;
             padding-top: 0 !important;
         }
     }
@@ -170,36 +423,149 @@
     }
 }
 @media only screen and (max-width: 320px) {
+    header{
+        .head{
+            h1{
+                font-size: 2.2rem;
+            }
+            .animacion{
+                h2{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
     main {
-        padding-left: 2rem;
-        padding-right: 2rem;
         span.badge {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             margin-bottom: 1rem;
         }
-        .container-fluid{
-            padding-left: 0;
-            padding-right: 0;
+        .dynamic{
+            padding: 0 1rem;
             .col{
-                .card{
-                    img{
-                        height: 180px;
-                        width: 180px;
+                .detalle{
+                    i{
+                        font-size: 2.2rem !important;
+                    }
+                    p{
+                        padding: 0;
+                        font-size: 0.8rem !important;
                     }
                 }
             }
+        }
+        .camp{
             .row{
-                img{
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
-                }
-                p{
-                    font-size: 1.1rem;
-                }
-                h3{
-                    font-size: 1.4rem;
+                .col{
+                    padding: 0 0.8rem !important;
+                    .card{
+                        img{
+                            width: 220px;
+                            height: 220px;
+                        }
+                        .card-body{
+                            h2{
+                                font-size: 2.8rem;
+                            }
+                            a.btn{
+                                i{
+                                    font-size: 0.9rem;
+                                }
+                                p{
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                        .card-footer{
+                            small{
+                                font-size: 0.9rem !important;
+                            }
+                        }
+                    }
                 }
             }
+        }
+        .nosotros{
+            .nuestro-equipo{
+                font-size: 1.6rem;
+                border-left-width: 4px;
+                padding-left: 0.5rem;
+                margin: 1.5rem 0.5rem 0 0.5rem;
+            }
+            .row{
+                padding: 0 1rem;
+                .imagen{
+                    padding: 0 1rem;
+                    img{
+                        padding: 0.5rem 0 0 0;
+                    }
+                }
+                .info{
+                    padding: 0;
+                    p{
+                        font-size: 0.9rem;
+                    }
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                }
+                .integrante{
+                    padding: 0;
+                    margin-bottom: 1rem;
+                    .contenedor-foto{
+                        width: 150px;
+                        height: 150px;
+                        img{
+                            width: 150px;
+                            height: 150px;
+                        };
+                    }
+                    h3{
+                        font-size: 1.4rem;
+                    }
+                    .redes{
+                        li{
+                            font-size: 1.8rem;
+                            .btn-secondary{
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .row-cols-md-3{
+                padding: 0 1rem;
+            }
+        }
+        figure{
+            padding: 0 0.8rem;
+            padding-top: 0.5rem;
+            blockquote{
+                padding-bottom: 0.5rem;
+                p{
+                    font-size: 1.4rem;
+                    line-height: 25px;
+                }
+            }
+            .blockquote-footer{
+                font-size: 1rem;
+                line-height: 20px;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    footer {
+        nav.redes-sociales {
+            a {
+                font-size: 2.2rem;
+                padding: 0 1rem;
+            }
+            padding-bottom: 1rem;
+        }
+
+        .text-center {
+            font-size: 0.9rem;
+            padding-top: 0 !important;
         }
     }
 }

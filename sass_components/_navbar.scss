@@ -2,15 +2,21 @@ nav.navbar{
     background-color: transparent !important;
     height: 3rem;
     width: 100%;
-    padding: 2.1rem 6rem;
+    padding: 2.6rem 6rem;
     z-index: 1 !important;
     position: fixed;
     transition: all .3s ease;
+    .navbar-brand{
+        padding: 0;
+        img{
+            width: 180px;
+        }
+    }
     .navbar-nav{
         width: 100%;
         text-align: center;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
         display: flex;
         li{
             a{
@@ -21,20 +27,34 @@ nav.navbar{
                     text-transform: uppercase;
                     font-family: 'Oswald', sans-serif;
                     font-weight: 400;
+                    color: #fff;
+                    transition: all .3s ease;
                 }
                 h3:hover{
-                    border-bottom: 1.5px solid #fff;
+                    //border-bottom: 1.5px solid #fff;
+                    color: $color-inscribete;
                 }
             }
         }  
     }      
 }
 nav.active{
-    background-color: #000 !important;
+    background-color: #fff !important;
     z-index: 100 !important;
-    height: 2.4rem;
+    height: 3.4rem;
     padding: 1.4rem 6rem;
     box-shadow: 0 0 4px $color-shadow;
+    filter: saturate(150%);
+    img{
+        width: 140px !important;
+    }
+    li{
+        a{
+            h3{
+                color: #000 !important;
+            }
+        }
+    }
 }
 .navbar-dark{
     .navbar-nav{
@@ -53,10 +73,22 @@ nav.active{
     }
 }
 .contenedor{
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    padding:  4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     button{
         position: absolute;
         bottom: 2.5rem;
         right: 2.5rem;
+        position: fixed;
+        z-index: 499;
         i{
             background-color: $color-wsp;
             border-radius: 50%;
@@ -75,5 +107,162 @@ nav.active{
         i:hover{
             transform: scale(1.1);
         }
+    }
+
+    .animacion{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 1.5rem;
+        span{
+            font-size: 4rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: $color-font;
+            text-align: center;
+            margin: 0;
+            line-height: 80px;
+            i{
+                font-style: normal;
+                color: $color-inscribete;
+            }
+        }
+    }
+
+    h2{
+        font-size: 31px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+
+    .cuenta{
+        width: 100%;
+        #cuenta{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.8rem;
+            p{
+                margin: 0;
+            }
+            .simply-days-section{
+                margin-left: 0.6rem !important;
+            }
+            .simply-section{
+                margin: 0 0.3rem;
+                color: $color-inscribete;
+            }
+        }
+    }
+
+    .contenedor-chat{
+        background-color: #fff;
+        width: 350px;
+        height: 300px;
+        position: fixed;
+        bottom: 110px;
+        right: 40px;
+        z-index: 100;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2);
+        transition: transform .3s ease-in-out;
+        transform: translate(115%);
+        .contenido-chat{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            background-image: url(../images/wsp-wallpaper.jpg);
+            background-size: 400px;
+            background-color: #bbbbbb;
+            .top{
+                background-color: #bbbbbb;
+                padding: 10px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                z-index: 1;
+                .close-button{
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    cursor: pointer;
+                    i{
+                        color: #000;
+                        font-size: 1.4rem;
+                    }
+                }
+                img{
+                    width: 45px;
+                    height: 40px;
+                    border: solid 1px #f1f1f1;
+                    padding: 5px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    background-color: #fff;
+                }
+                .estado-chat{
+                    display: flex;
+                    flex-direction: column;
+                    strong{
+                        display: block;
+                        line-height: 15px;
+                        margin-bottom: 5px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                    }
+                    span{
+                        font-size: 14px;
+                        line-height: 12px;
+                        font-family: 'Raleway', sans-serif;
+                    }
+                }
+            }
+            .bottom{
+                background-color: #bbbbbb;
+                padding: 10px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                z-index: 1;
+                textarea{
+                    appearance: none;
+                    outline: none;
+                    resize: none;
+                    background-color: #fff;
+                    border-color: #fff;
+                    border-radius: 20px;
+                    line-height: 20px;
+                    border-style: solid;
+                    border-width: 1px;
+                    padding: 10px;
+                    width: calc(100% - 35px);
+                    box-shadow: none;
+                    height: 45px;
+                }
+                textarea::placeholder{
+                    font-size: 16px;
+                }
+                .send-button{
+                    cursor: pointer;
+                    img{
+                        width: 26px;
+                        margin-left: 10px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .active{
+        transform: translate(0);
     }
 }
